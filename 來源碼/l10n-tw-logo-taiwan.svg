@@ -29,10 +29,10 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.0000001"
-     inkscape:cx="140.01829"
+     inkscape:cx="103.51829"
      inkscape:cy="159.67968"
      inkscape:document-units="mm"
-     inkscape:current-layer="a4294"
+     inkscape:current-layer="group_taiwan_and_small_islands"
      showgrid="false"
      units="cm"
      inkscape:pagecheckerboard="true"
@@ -75,7 +75,8 @@
      inkscape:label="主圖層"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-197.00002)">
+     transform="translate(0,-197.00002)"
+     style="display:inline">
     <flowRoot
        xml:space="preserve"
        id="flowRoot10"
@@ -93,8 +94,10 @@
          id="flowPara22" /><flowPara
          id="flowPara24" /><flowPara
          id="flowPara26" /></flowRoot>    <a
-       id="a4294"
+       id="official-site-url"
        target="http://l10n.tw">
+      <title
+         id="title4283">官方網站網址</title>
       <text
          id="text38"
          y="280.69241"
@@ -108,26 +111,35 @@
            y="280.69241">l10n.tw</tspan></text>
     </a>
     <g
-       id="g4497"
+       id="group_taiwan_and_small_islands"
        transform="matrix(1.23845,0,0,1.23845,-10.089594,-54.928461)"
        style="fill:#18a303;fill-opacity:1;stroke:none;stroke-opacity:1">
+      <title
+         id="title4285">台灣本島跟離島輪廓</title>
       <path
          style="fill:#18a303;fill-opacity:1;stroke:none;stroke-width:0.43966624;stroke-opacity:1"
          d="m 56.194071,213.04931 c -2.118395,0.94239 -1.237838,1.66289 -3.664429,2.18308 -1.666556,0.35918 -2.305253,1.80473 -3.103532,3.11267 0.04925,1.15202 -0.877225,1.91824 -1.607086,2.3795 -0.696358,0.68665 -1.291262,2.29298 -2.12818,3.29975 -0.480669,0.68032 -0.704619,1.55792 -1.244917,2.6109 -1.035474,0.9603 -1.116095,2.47386 -2.290637,3.34427 -0.899094,1.03399 -0.544688,2.66073 -1.076277,3.58312 0.922064,0.87284 -0.03882,1.98144 -0.09267,2.75609 -0.621566,0.70385 -0.164808,1.52318 -0.71545,2.05043 1.23527,0.82229 1.589673,1.98361 1.871488,3.34922 0.743282,1.06133 0.01744,2.41213 1.447525,3.19467 0.729682,1.14365 -0.695817,-0.70471 0.703162,0.32679 1.15309,0.91225 2.410509,1.7394 2.71471,3.28727 0.463533,1.06475 -0.29205,2.16074 0.4488,3.0666 0.328575,-1.12549 1.926858,1.23507 1.156382,-0.5409 1.210803,-1.18302 0.106012,-3.12067 0.722477,-4.57393 0.625786,-1.29887 0.655316,-3.04928 1.987736,-3.79932 1.148953,-0.57325 0.829993,-1.75764 1.767766,-2.42144 0.649205,-1.24263 1.343134,-2.30405 1.518756,-3.53642 0.536259,-1.23234 0.943843,-2.56386 1.119953,-3.91921 0.343809,-1.65618 0.649162,-3.4534 1.211377,-4.94269 -0.555062,-1.3868 0.71664,-2.45611 1.336116,-3.63787 0.01391,-1.23828 1.08856,-1.99817 1.03571,-3.05743 -0.373741,-0.72652 -1.127005,-3.02929 0.21888,-3.98943 0.577767,-0.52881 1.616571,-0.91583 0.401397,-1.11756 -0.206857,-0.71841 -0.0519,-1.28812 -1.055681,-1.03791 -0.553756,-0.43347 -1.425576,-0.0528 -1.427942,-0.95796 -0.648657,0.3268 -0.602452,-0.9607 -1.255438,-1.01229 z"
-         id="svg_29"
+         id="outline-taiwan-mainland"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccccccccccccccccccccccccccc" />
+         sodipodi:nodetypes="ccccccccccccccccccccccccccccc">
+        <title
+           id="title4297">台灣本島輪廓</title>
+      </path>
       <g
          style="fill:#18a303;fill-opacity:1;stroke:none;stroke-opacity:1"
          transform="matrix(0.79500242,0,0,0.79500242,7.9302839,50.587192)"
-         id="g1023">
+         id="group-taiwan-outsea-islands">
+        <title
+           id="title4287">台灣離島群組</title>
         <g
            style="fill:#18a303;fill-opacity:1;stroke:none;stroke-opacity:1"
            id="g4469">
           <g
-             id="svg_73"
+             id="outline-peng-hu"
              style="fill:#18a303;fill-opacity:1;stroke:none;stroke-opacity:1"
              transform="matrix(0.06355437,0,0,0.06355437,9.7138503,182.61226)">
+            <title
+               id="title4289">澎湖輪廓</title>
             <path
                d="m 369.06589,720.12299 v 1.13593 z"
                id="svg_92"
@@ -227,57 +239,71 @@
           <path
              style="fill:#18a303;fill-opacity:1;stroke:none;stroke-width:0.06355437;stroke-opacity:1"
              inkscape:connector-curvature="0"
-             id="svg_68"
-             d="m 44.369309,247.50415 -0.176818,0.31399 0.04913,0.0452 0.06258,0.018 0.134129,-0.0406 0.02681,-0.0541 0.15199,-0.16243 0.142931,-0.0902 0.02241,-0.0496 -0.01345,-0.0541 -0.05362,-0.0271 -0.02233,-0.0451 -0.04465,-0.0362 -0.06258,0.004 -0.10283,0.0496 -0.03586,0.0406 -0.04474,0.0226 -0.02681,0.0452 -0.0062,0.0198 v 0 z" />
+             id="outline-lyo-chiuo"
+             d="m 44.369309,247.50415 -0.176818,0.31399 0.04913,0.0452 0.06258,0.018 0.134129,-0.0406 0.02681,-0.0541 0.15199,-0.16243 0.142931,-0.0902 0.02241,-0.0496 -0.01345,-0.0541 -0.05362,-0.0271 -0.02233,-0.0451 -0.04465,-0.0362 -0.06258,0.004 -0.10283,0.0496 -0.03586,0.0406 -0.04474,0.0226 -0.02681,0.0452 -0.0062,0.0198 v 0 z">
+            <title
+               id="title4291">琉球輪廓</title>
+          </path>
           <path
              style="fill:#18a303;fill-opacity:1;stroke:none;stroke-width:0.06355437;stroke-opacity:1"
              inkscape:connector-curvature="0"
-             id="svg_52"
-             d="m 60.462926,242.77295 v 0.13534 l 0.116146,0.0812 0.03577,0.1263 v 0.1353 l 0.05371,0.0631 0.125155,0.018 0.125153,0.15338 0.125164,0.036 0.08935,-0.018 -0.08926,-0.0902 -0.009,-0.10827 0.142928,-0.20749 v -0.13535 l -0.02672,-0.11727 -0.08043,-0.0631 -0.134121,0.009 -0.11619,-0.0541 -0.259273,0.0452 -0.09832,-0.009 v 0 z" />
+             id="outline-lu-dao"
+             d="m 60.462926,242.77295 v 0.13534 l 0.116146,0.0812 0.03577,0.1263 v 0.1353 l 0.05371,0.0631 0.125155,0.018 0.125153,0.15338 0.125164,0.036 0.08935,-0.018 -0.08926,-0.0902 -0.009,-0.10827 0.142928,-0.20749 v -0.13535 l -0.02672,-0.11727 -0.08043,-0.0631 -0.134121,0.009 -0.11619,-0.0541 -0.259273,0.0452 -0.09832,-0.009 v 0 z">
+            <title
+               id="title4293">綠島輪廓</title>
+          </path>
           <path
              style="fill:#18a303;fill-opacity:1;stroke:none;stroke-width:0.06355437;stroke-opacity:1"
              inkscape:connector-curvature="0"
-             id="svg_51"
-             d="m 63.287004,252.28594 0.07155,0.0993 0.08042,0.0722 h 0.134065 l 0.125147,0.027 0.06258,-0.018 0.03586,-0.0992 0.06258,-0.0812 0.01784,-0.11721 -0.116233,-0.0541 -0.08034,-0.0812 -0.09837,-0.027 -0.214516,-0.18946 -0.03577,-0.0993 0.009,-0.1263 0.125164,-0.009 -0.009,-0.10827 -0.07155,-0.0722 -0.01776,-0.1172 0.06258,-0.0722 -0.05362,-0.0811 -0.491706,0.009 -0.09836,0.036 h -0.268134 l -0.08042,-0.0541 -0.08042,0.0179 v 0.0902 l 0.09831,0.0632 v 0.39695 l 0.05362,0.0811 0.125153,0.0452 0.25031,0.31576 h 0.268177 l 0.107286,0.0723 0.02672,0.0811 v 0 z" />
+             id="outline-lan-yu"
+             d="m 63.287004,252.28594 0.07155,0.0993 0.08042,0.0722 h 0.134065 l 0.125147,0.027 0.06258,-0.018 0.03586,-0.0992 0.06258,-0.0812 0.01784,-0.11721 -0.116233,-0.0541 -0.08034,-0.0812 -0.09837,-0.027 -0.214516,-0.18946 -0.03577,-0.0993 0.009,-0.1263 0.125164,-0.009 -0.009,-0.10827 -0.07155,-0.0722 -0.01776,-0.1172 0.06258,-0.0722 -0.05362,-0.0811 -0.491706,0.009 -0.09836,0.036 h -0.268134 l -0.08042,-0.0541 -0.08042,0.0179 v 0.0902 l 0.09831,0.0632 v 0.39695 l 0.05362,0.0811 0.125153,0.0452 0.25031,0.31576 h 0.268177 l 0.107286,0.0723 0.02672,0.0811 v 0 z">
+            <title
+               id="title4295">蘭嶼輪廓</title>
+          </path>
         </g>
       </g>
     </g>
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="臺版">
-    <text
-       transform="translate(0,-197.00002)"
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:52.91666794px;font-family:'思源黑體 TW';-inkscape-font-specification:'思源黑體 TW';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="12.593857"
-       y="269.57098"
-       id="text30-3"><tspan
-         sodipodi:role="line"
-         x="12.593857"
-         y="269.57098"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'思源黑體 TW';-inkscape-font-specification:'思源黑體 TW';stroke-width:0.26458332px"
-         id="tspan32-6"><tspan
-   style="fill:#808080"
-   id="tspan4288">臺</tspan>灣在地化社群</tspan></text>
-  </g>
-  <g
-     inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="台版"
-     style="display:inline">
+     style="display:none">
     <text
        transform="translate(0,-197.00002)"
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:52.91666412px;font-family:'思源黑體 TW';-inkscape-font-specification:'思源黑體 TW';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="12.609083"
        y="269.55307"
-       id="text30"><tspan
+       id="brand-zh-tw-new-tai"><title
+         id="title4281">「台」版品牌名</title><tspan
          sodipodi:role="line"
          x="12.609083"
          y="269.55307"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'思源黑體 TW';-inkscape-font-specification:'思源黑體 TW';stroke-width:0.26458332px"
          id="tspan32">台灣在地化社群</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="臺版"
+     style="display:inline">
+    <a
+       id="brand-zh-tw-original-tai">
+      <title
+         id="title4279">「臺」版品牌名</title>
+      <text
+         id="text30-3"
+         y="269.57098"
+         x="12.593857"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:52.91666794px;font-family:'思源黑體 TW';-inkscape-font-specification:'思源黑體 TW';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"
+         transform="translate(0,-197.00002)"><tspan
+           id="tspan32-6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'思源黑體 TW';-inkscape-font-specification:'思源黑體 TW';stroke-width:0.26458332px"
+           y="269.57098"
+           x="12.593857"
+           sodipodi:role="line">臺灣在地化社群</tspan></text>
+    </a>
   </g>
 </svg>
