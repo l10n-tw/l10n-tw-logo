@@ -65,6 +65,7 @@ main() {
 	
 	local archive_directory="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")"
 	
+	rm --recursive --force "$archive_directory"
 	mkdir --parent "$archive_directory"
 	
 	cp "$FILE_SOURCE_DESIGN" "$archive_directory"
