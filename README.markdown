@@ -27,6 +27,8 @@
 
 * Inkscape
 	* 用於 logo 設計
+* 思源黑體 TW
+	* 用於中文字字體
 * GNU CoreUtils
 	* 用於軟體建構程序
 * GNU Bash
