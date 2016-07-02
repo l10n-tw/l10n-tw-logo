@@ -1,4 +1,6 @@
 # l10n-tw 的代表 logo<br />l10n-tw-logo
+![目前的 logo（感謝 RawGit 技術支持！）](https://cdn.rawgit.com/l10n-tw/l10n-tw-logo/master/%E4%BE%86%E6%BA%90%E7%A2%BC/l10n-tw-logo-taiwan.svg)
+
 ## 原始設計者<br>Original Designer
 Ｖ字龍 &lt;<Vdragon.Taiwan@gmail.com>&gt;
 
