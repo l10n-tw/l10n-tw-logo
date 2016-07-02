@@ -44,12 +44,13 @@ set -o pipefail
 
 ######## Program ########
 check_program_dependencies() {
-	which inkscape &>/dev/null
-	if [ $? -ne 0 ]; then
-		printf "錯誤：本程式需要 inkscape 命令才能正常運作！" 1>&2
-		exit 1
-	fi
-
+	for command in inkscape 7za cp mkdir; do
+		which $command &>/dev/null
+		if [ $? -ne 0 ]; then
+			printf "錯誤：本程式需要 $command 命令才能正常運作！" 1>&2
+			exit 1
+		fi
+	done
 	return
 }
 
