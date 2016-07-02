@@ -56,6 +56,8 @@ check_program_dependencies() {
 # Defensive Bash Programming - main function, program entry point
 # http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
 main() {
+	check_program_dependencies
+	
 	inkscape --export-png="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN").png" "$FILE_SOURCE_DESIGN"
 	
 	inkscape --export-background="rgb(255, 255, 255)" --export-png="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")-background-white.png" "$FILE_SOURCE_DESIGN"
