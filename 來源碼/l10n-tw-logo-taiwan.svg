@@ -29,10 +29,10 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.0000001"
-     inkscape:cx="165.76829"
-     inkscape:cy="199.67968"
+     inkscape:cx="140.01829"
+     inkscape:cy="159.67968"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="a4294"
      showgrid="false"
      units="cm"
      inkscape:pagecheckerboard="true"
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
@@ -98,14 +98,14 @@
       <text
          id="text38"
          y="280.69241"
-         x="15.615497"
-         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:52.91666412px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;image-rendering:auto"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'思源黑體 TW';-inkscape-font-specification:'思源黑體 TW';stroke-width:0.26458332px"
-           y="280.69241"
-           x="15.615497"
-           id="tspan36"
-           sodipodi:role="line">http://l10n.tw</tspan></text>
+         x="31.604183"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:20000%;font-family:'思源黑體 TW';-inkscape-font-specification:'思源黑體 TW, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;image-rendering:auto"
+         xml:space="preserve"
+         sodipodi:linespacing="20000%"><tspan
+           sodipodi:role="line"
+           id="tspan4274"
+           x="31.604183"
+           y="280.69241">l10n.tw</tspan></text>
     </a>
     <g
        id="g4497"
