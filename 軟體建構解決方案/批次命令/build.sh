@@ -59,6 +59,7 @@ check_program_dependencies() {
 main() {
 	check_program_dependencies
 	
+	cp "$FILE_SOURCE_DESIGN" "$DIRECTORY_BUILD_ARTIFACTS"
 	inkscape --export-png="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN").png" "$FILE_SOURCE_DESIGN"
 	
 	inkscape --export-background="rgb(255, 255, 255)" --export-png="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")-background-white.png" "$FILE_SOURCE_DESIGN"
@@ -67,8 +68,8 @@ main() {
 	
 	rm --recursive --force "$archive_directory"
 	mkdir --parent "$archive_directory"
-	
-	cp "$FILE_SOURCE_DESIGN" "$archive_directory"
+
+	cp "$DIRECTORY_BUILD_ARTIFACTS/"*.svg "$archive_directory"
 	cp "$DIRECTORY_BUILD_ARTIFACTS/"*.png "$archive_directory"	
 	cp "$DIRECTORY_PROJECT_ROOT/README.markdown" "$archive_directory"
 	
