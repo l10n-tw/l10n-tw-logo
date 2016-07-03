@@ -69,6 +69,7 @@ main() {
 	rm --recursive --force "$archive_directory"
 	mkdir --parent "$archive_directory"
 
+	xmlstarlet edit --pf --ps --inplace --delete "/_:svg/@inkscape:export-filename | /_:svg/@inkscape:version | /_:svg/sodipodi:namedview/@inkscape:cx | /_:svg/sodipodi:namedview/@inkscape:cy | /_:svg/sodipodi:namedview/@inkscape:current-layer" "$DIRECTORY_BUILD_ARTIFACTS/"*.svg
 	cp "$DIRECTORY_BUILD_ARTIFACTS/"*.svg "$archive_directory"
 	cp "$DIRECTORY_BUILD_ARTIFACTS/"*.png "$archive_directory"	
 	cp "$DIRECTORY_PROJECT_ROOT/README.markdown" "$archive_directory"
