@@ -35,3 +35,14 @@ MStargazer (author of the original work: Luuva) 所做之 Free area of the Repub
 
 ### 遵循的授權條款
 Creative Commons [Attribution-Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
+
+## Free area of the Republic of China.trimmed.svg
+### 作者
+* Ｖ字龍
+* MStargazer (author of the original work: Luuva) 
+
+### 來源
+MStargazer (author of the original work: Luuva) 所做之 Free area of the Republic of China.svg 的衍伸作品
+
+### 遵循的授權條款
+Creative Commons [Attribution-Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
