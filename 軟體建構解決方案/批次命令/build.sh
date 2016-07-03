@@ -44,7 +44,7 @@ set -o pipefail
 
 ######## Program ########
 check_program_dependencies() {
-	for command in inkscape 7za cp mkdir; do
+	for command in inkscape 7za cp mkdir xmlstarlet; do
 		which $command &>/dev/null
 		if [ $? -ne 0 ]; then
 			printf "錯誤：本程式需要 $command 命令才能正常運作！" 1>&2
@@ -58,11 +58,9 @@ check_program_dependencies() {
 # http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
 main() {
 	check_program_dependencies
-	
-	cp "$FILE_SOURCE_DESIGN" "$DIRECTORY_BUILD_ARTIFACTS"
-	inkscape --export-png="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN").png" "$FILE_SOURCE_DESIGN"
-	
-	inkscape --export-background="rgb(255, 255, 255)" --export-png="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")-background-white.png" "$FILE_SOURCE_DESIGN"
+
+	source "$PROGRAM_DIRECTORY/build.original_version.source.sh"
+	source "$PROGRAM_DIRECTORY/build.background-white.source.sh"
 	
 	local archive_directory="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")"
 	
