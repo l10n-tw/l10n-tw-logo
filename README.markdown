@@ -11,7 +11,7 @@
 
 ## 特色<br>Features
 * 字型選用思源黑體 TW
-* 包含台澎琉蘭綠、不包含金馬
+* 包含台澎琉蘭綠龜東南沙群島、不包含金馬
 * 來源碼為 Inkscape SVG，可自由放大縮小產生各種尺寸的圖
 
 ## 未來開發目標<br>Future Development Goals
