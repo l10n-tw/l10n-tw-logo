@@ -29,7 +29,6 @@
       inkscape:pageshadow="2"
       inkscape:zoom="2.0000001"
       inkscape:document-units="mm"
-      inkscape:current-layer="layer1"
       showgrid="false"
       units="cm"
       inkscape:pagecheckerboard="true"
@@ -342,6 +341,7 @@
       inkscape:groupmode="layer"
       id="layer4"
       inkscape:label="官方版本（官方網站網址）"
+      style="display:inline"
     >
     <a
         transform="translate(0,-197.00002)"
@@ -429,6 +429,40 @@
           id="tspan32"
         >台灣在地化社群</tspan
       ></text
+    >
+  </g
+  >
+  <g
+      inkscape:groupmode="layer"
+      id="layer5"
+      inkscape:label="欸嘍十恩點踢搭補魯版"
+      style="display:none"
+    >
+    <a
+        transform="translate(-4.4965742e-7,-196.78966)"
+        style="display:inline"
+        id="official-site-url-mandarin-ver"
+        target="http://l10n.tw"
+      >
+      <title
+          id="title4283-6"
+        >官方網站網址（中文版）</title
+      >
+      <text
+          id="text38-7"
+          y="280.69241"
+          x="2.3697102"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:105.83332825px;font-family:'思源黑體 TW';-inkscape-font-specification:'思源黑體 TW, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;image-rendering:auto"
+          xml:space="preserve"
+        ><tspan
+            sodipodi:role="line"
+            id="tspan4274-5"
+            x="2.3697102"
+            y="280.69241"
+          >欸嘍十恩點踢搭補魯</tspan
+        ></text
+      >
+    </a
     >
   </g
   >
