@@ -1,3 +1,3 @@
 [filter "strip-unneeded-information"]
-	clean = xmlstarlet edit --pf --ps --delete \"//@inkscape:export-filename | //@inkscape:version | //@inkscape:cx | //@inkscape:cy\"
+	clean = xmlstarlet edit --pf --ps --delete \"//@inkscape:export-filename | //@inkscape:version | //@inkscape:cx | //@inkscape:cy | //@inkscape:current-layer\"
 
