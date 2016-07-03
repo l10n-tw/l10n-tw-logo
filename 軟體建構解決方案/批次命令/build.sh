@@ -61,6 +61,7 @@ main() {
 
 	source "$PROGRAM_DIRECTORY/build.original_version.source.sh"
 	source "$PROGRAM_DIRECTORY/build.background-white.source.sh"
+	source "$PROGRAM_DIRECTORY/build.new-tai.source.sh"
 	
 	local archive_directory="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")"
 	
