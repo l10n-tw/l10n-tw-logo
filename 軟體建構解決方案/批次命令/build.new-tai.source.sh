@@ -1,7 +1,7 @@
 	declare new_source_file="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")-new-tai.svg"
 	printf "資訊：正在建構「台」版……\n"
 	cp "$FILE_SOURCE_DESIGN" "$new_source_file"
-	xmlstarlet edit --pf --ps --inplace --update "//_:g[@inkscape:label='臺版']/@style" --value "display:none" "$new_source_file"
+	xmlstarlet edit --pf --ps --inplace --update "//_:g[@inkscape:label='官方版本（品牌名）']/@style" --value "display:none" "$new_source_file"
 	xmlstarlet edit --pf --ps --inplace --update "//_:g[@inkscape:label='台版']/@style" --value "display:inline" "$new_source_file"
 	inkscape --export-png="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$new_source_file").png" "$new_source_file"
 	
