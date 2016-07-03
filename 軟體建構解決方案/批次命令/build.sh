@@ -63,6 +63,7 @@ main() {
 	source "$PROGRAM_DIRECTORY/build.background-white.source.sh"
 	source "$PROGRAM_DIRECTORY/build.new-tai.source.sh"
 	source "$PROGRAM_DIRECTORY/build.official-site-url-chinese-url.source.sh"
+	source "$PROGRAM_DIRECTORY/build.dpp.source.sh"
 	
 	local archive_directory="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")"
 	
