@@ -64,3 +64,12 @@ Creative Commons [Attribution-Share Alike 4.0 International](https://creativecom
 ### 遵循的授權條款
 [合理使用 - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/%E5%90%88%E7%90%86%E4%BD%BF%E7%94%A8)
 
+## 時代力量黨徽
+![圖片預覽](New_Power_Party_logo.png)
+
+## 來源
+[檔案:New Power Party logo.png - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/File:New_Power_Party_logo.png)
+
+## 授權條款
+[合理使用 - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/%E5%90%88%E7%90%86%E4%BD%BF%E7%94%A8)
+
