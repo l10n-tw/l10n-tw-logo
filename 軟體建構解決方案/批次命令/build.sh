@@ -66,6 +66,7 @@ main() {
 	source "$PROGRAM_DIRECTORY/build.dpp.source.sh"
 	source "$PROGRAM_DIRECTORY/build.new-power-party.source.sh"
 	source "$PROGRAM_DIRECTORY/build.china-communist.source.sh"
+	source "$PROGRAM_DIRECTORY/build.lion.source.sh"
 	
 	local archive_directory="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")"
 	

@@ -80,3 +80,14 @@ Creative Commons [Attribution-Share Alike 4.0 International](https://creativecom
 ### 授權條款
 [合理使用 - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/%E5%90%88%E7%90%86%E4%BD%BF%E7%94%A8)
 
+## Polygonal-Lion-Face
+![圖片預覽](Polygonal-Lion-Face.svg)
+
+### 作者
+[GDJ](https://openclipart.org/user-detail/GDJ) via Openclipart
+
+### 來源
+[Clipart - Polygonal Lion Face](https://openclipart.org/detail/244227/polygonal-lion-face)
+
+### 授權條款
+Public Domain
