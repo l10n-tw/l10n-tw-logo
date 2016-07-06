@@ -91,3 +91,16 @@ Creative Commons [Attribution-Share Alike 4.0 International](https://creativecom
 
 ### 授權條款
 Public Domain
+
+## Shisa face
+![圖片預覽](Shisa_face.svg)
+
+### 作者
+[Finemann](https://en.wikipedia.org/wiki/User:Finemann)
+
+### 來源
+[File:Shisa face.svg - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/File:Shisa_face.svg)
+
+### 遵循的授權條款
+* [Creative Commons Attribution-ShareAlike 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+* [GNU Free Documentation License](https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License), Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. 
