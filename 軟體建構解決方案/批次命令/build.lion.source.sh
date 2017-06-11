@@ -3,7 +3,7 @@
 	cp "$FILE_SOURCE_DESIGN" "$new_source_file"
 	xmlstarlet edit --pf --ps --inplace --update "//_:g[@inkscape:label='主圖層']/@style" --value "display:none" "$new_source_file"
 	xmlstarlet edit --pf --ps --inplace --update "//_:g[@inkscape:label='官方版本（官方網站網址）']/@style" --value "display:none" "$new_source_file"
-	xmlstarlet edit --pf --ps --inplace --update "//_:g[@inkscape:label='LION 版']/@style" --value "display:inline" "$new_source_file"
+	xmlstarlet edit --pf --ps --inplace --update "//_:g[@inkscape:label='官方版本（LION 版）']/@style" --value "display:inline" "$new_source_file"
 	inkscape --export-png="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$new_source_file").png" "$new_source_file"
 	
 	declare new_source_file_white_background="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")-lion-background-white.svg"
