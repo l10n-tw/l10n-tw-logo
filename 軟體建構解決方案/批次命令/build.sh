@@ -61,13 +61,13 @@ main() {
 
 	source "$PROGRAM_DIRECTORY/build.original_version.source.sh"
 	source "$PROGRAM_DIRECTORY/build.background-white.source.sh"
+	source "$PROGRAM_DIRECTORY/build.tai.source.sh"
 	source "$PROGRAM_DIRECTORY/build.new-tai.source.sh"
 	source "$PROGRAM_DIRECTORY/build.official-site-url-chinese-url.source.sh"
 	source "$PROGRAM_DIRECTORY/build.dpp.source.sh"
 	source "$PROGRAM_DIRECTORY/build.new-power-party.source.sh"
 	source "$PROGRAM_DIRECTORY/build.china-communist.source.sh"
 	source "$PROGRAM_DIRECTORY/build.lion.source.sh"
-	source "$PROGRAM_DIRECTORY/build.lionv2.source.sh"
 	
 	local archive_directory="$DIRECTORY_BUILD_ARTIFACTS/$(basename --suffix=.svg "$FILE_SOURCE_DESIGN")"
 	
