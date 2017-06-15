@@ -1,4 +1,4 @@
-# l10n-tw 的代表 logo<br />l10n-tw-logo
+# 臺灣在地化社群的標誌<br />L10n-TW's Logo
 ![目前的 logo（感謝 RawGit 技術支持！）](https://cdn.rawgit.com/l10n-tw/l10n-tw-logo/%E4%B8%BB%E8%A6%81%E9%96%8B%E7%99%BC%E5%88%86%E6%94%AF/%E4%BE%86%E6%BA%90%E7%A2%BC/l10n-tw-logo.svg)
 
 ## 原始設計者<br>Original Designer
