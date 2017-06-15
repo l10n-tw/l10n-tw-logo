@@ -23,7 +23,7 @@ declare -r DIRECTORY_PROJECT_SOURCE_CODE="$DIRECTORY_PROJECT_ROOT/來源碼"
 declare -r DIRECTORY_BUILD_ARTIFACTS="$DIRECTORY_PROJECT_ROOT/建構中間產物"
 declare -r DIRECTORY_BUILD_RESULTS="$DIRECTORY_PROJECT_ROOT/建構結果"
 
-declare -r FILE_SOURCE_DESIGN="$DIRECTORY_PROJECT_SOURCE_CODE/l10n-tw-logo-taiwan.svg"
+declare -r FILE_SOURCE_DESIGN="$DIRECTORY_PROJECT_SOURCE_CODE/l10n-tw-logo.svg"
 
 ## Unofficial Bash Script Mode
 ## http://redsymbol.net/articles/unofficial-bash-strict-mode/
