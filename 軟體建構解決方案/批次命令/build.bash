@@ -111,7 +111,7 @@ check_program_dependencies() {
 		fi
 	done
 	return
-}
+}; declare -fr check_program_dependencies
 
 ## Traps: Functions that are triggered when certain condition occurred
 ## Shell Builtin Commands » Bourne Shell Builtins » trap
