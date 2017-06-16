@@ -207,7 +207,8 @@ svg_to_png(){
 
 	inkscape\
 		--export-png="${png_file}"\
-		"${svg_file}"
+		"${svg_file}"\
+		>/dev/null
 }; declare -fr svg_to_png
 
 ## Traps: Functions that are triggered when certain condition occurred
