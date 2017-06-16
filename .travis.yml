@@ -21,7 +21,7 @@ addons:
     - xmlstarlet
 
 script:
-- 軟體建構解決方案/批次命令/build.bash --debug
+- 軟體建構解決方案/批次命令/build.bash
 
 deploy:
   provider: releases
