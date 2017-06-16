@@ -105,13 +105,13 @@ init(){
 	mv "${DIRECTORY_BUILD_ARTIFACTS}/"*.png "${archive_directory}"	
 	cp "${DIRECTORY_PROJECT_ROOT}/README.markdown" "${archive_directory}"
 	
-	7za a "$DIRECTORY_BUILD_RESULTS/${SOFTWARE_IDENTIFIER}-${version}".7z "${archive_directory}"
+	7zr a "$DIRECTORY_BUILD_RESULTS/${SOFTWARE_IDENTIFIER}-${version}".7z "${archive_directory}"
 	
 	exit 0
 }; declare -fr init
 
 check_program_dependencies() {
-	for command in inkscape 7za cp mkdir xmlstarlet; do
+	for command in inkscape 7zr cp mkdir xmlstarlet; do
 		which ${command} &>/dev/null
 		if [ $? -ne 0 ]; then
 			printf "錯誤：本程式需要 %s 命令才能正常運作！" "${command}" 1>&2
