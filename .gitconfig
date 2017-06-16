@@ -1,3 +1,3 @@
 [filter "strip-unneeded-information"]
-	clean = xmlstarlet edit --pf --ps --delete \"/_:svg/@inkscape:export-filename | /_:svg/@inkscape:version | /_:svg/sodipodi:namedview/@inkscape:cx | /_:svg/sodipodi:namedview/@inkscape:cy | /_:svg/sodipodi:namedview/@inkscape:current-layer | /_:svg/sodipodi:namedview/@inkscape:zoom | /_:svg/sodipodi:namedview/@inkscape:snap-nodes | /_:svg/sodipodi:namedview/@inkscape:window-width | /_:svg/sodipodi:namedview/@inkscape:window-height\"
+	clean = "\"開發工具/用於 SVG 的清潔過濾器/Clean Filter for SVG.bash\""
 
