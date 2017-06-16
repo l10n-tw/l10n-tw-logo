@@ -28,6 +28,9 @@ fi
 declare -ar RUNTIME_COMMANDLINE_PARAMETERS=("${@}")
 
 declare -r\
+	SOFTWARE_IDENTIFIER="l10n-tw-logo"
+
+declare -r\
 	DIRECTORY_PROJECT_ROOT="$(realpath --no-symlinks "${RUNTIME_EXECUTABLE_DIRECTORY}/../..")"
 
 declare -r\
@@ -42,7 +45,8 @@ declare -r\
 declare -r\
 	SVG_CLEAN_FILTER="${DIRECTORY_SVG_CLEAN_FILTER}/Clean Filter for SVG.bash"
 
-declare -r FILE_SOURCE_DESIGN="${DIRECTORY_PROJECT_SOURCE_CODE}/l10n-tw-logo.svg"
+declare -r\
+	FILE_SOURCE_DESIGN="${DIRECTORY_PROJECT_SOURCE_CODE}/${SOFTWARE_IDENTIFIER}.svg"
 
 ## init function: entrypoint of main program
 ## This function is called near the end of the file,
@@ -65,7 +69,7 @@ init(){
 			"${RUNTIME_EXECUTABLE_NAME}.XXXXXX.tmpdir"
 	)"
 
-	local sanitized_design_source="${temp_dir}/sanitized.svg"
+	local sanitized_design_source="${temp_dir}/${SOFTWARE_IDENTIFIER}.sanitized.svg"
 	cat "${FILE_SOURCE_DESIGN}"\
 		| "${SVG_CLEAN_FILTER}"\
 		>"${sanitized_design_source}"
@@ -84,7 +88,7 @@ init(){
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.china-communist.source.sh"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.lion.source.sh"
 	
-	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/$(basename --suffix=.svg "${FILE_SOURCE_DESIGN}")"
+	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}"
 	
 	rm --recursive --force "${archive_directory}"
 	mkdir --parents "${archive_directory}"
@@ -93,7 +97,7 @@ init(){
 	cp "${DIRECTORY_BUILD_ARTIFACTS}/"*.png "${archive_directory}"	
 	cp "${DIRECTORY_PROJECT_ROOT}/README.markdown" "${archive_directory}"
 	
-	7za a "$DIRECTORY_BUILD_RESULTS/$(basename --suffix=.svg "${FILE_SOURCE_DESIGN}")".7z "${archive_directory}"
+	7za a "$DIRECTORY_BUILD_RESULTS/${SOFTWARE_IDENTIFIER}".7z "${archive_directory}"
 	
 	exit 0
 }; declare -fr init
