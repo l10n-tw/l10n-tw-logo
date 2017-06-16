@@ -25,10 +25,14 @@ declare -r PROJECT_ROOT_DIRECTORY="${PROGRAM_DIRECTORY}"
 # Defensive Bash Programming - main function, program entry point
 # http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
 main() {
+	export\
+		GIT_DIR="${PROJECT_ROOT_DIRECTORY}"/.git\
+		GIT_WORK_TREE="${PROJECT_ROOT_DIRECTORY}"
+
 	# 安裝專案專用 Git 設定
 	# git - Is it possible to include a file in your .gitconfig - Stack Overflow
 	# http://stackoverflow.com/questions/1557183/is-it-possible-to-include-a-file-in-your-gitconfig
-	git --git-dir="${PROJECT_ROOT_DIRECTORY}"/.git --work-tree="${PROJECT_ROOT_DIRECTORY}" config --local include.path '../.gitconfig'
+	git config --local include.path '../.gitconfig'
 	
 	# 安裝版本提交前 Git 掛勾程式
 	ln --symbolic --force "../../開發工具/Git 版本控制系統掛勾程式/pre-commit.sh" "${PROJECT_ROOT_DIRECTORY}"/.git/hooks/pre-commit
