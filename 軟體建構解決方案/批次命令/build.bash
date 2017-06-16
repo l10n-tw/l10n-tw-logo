@@ -31,7 +31,7 @@ declare -r\
 	SOFTWARE_IDENTIFIER="l10n-tw-logo"
 
 declare -r\
-	DIRECTORY_PROJECT_ROOT="$(realpath --no-symlinks "${RUNTIME_EXECUTABLE_DIRECTORY}/../..")"
+	DIRECTORY_PROJECT_ROOT="$(realpath --strip "${RUNTIME_EXECUTABLE_DIRECTORY}/../..")"
 
 declare -r\
 	DIRECTORY_PROJECT_SOURCE_CODE="${DIRECTORY_PROJECT_ROOT}/來源碼"\
