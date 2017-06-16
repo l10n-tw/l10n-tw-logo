@@ -96,7 +96,7 @@ init(){
 		version="$(git rev-parse --short HEAD)"
 	fi
 
-	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}"
+	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-${version}"
 	
 	rm --recursive --force "${archive_directory}"
 	mkdir --parents "${archive_directory}"
