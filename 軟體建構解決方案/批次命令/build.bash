@@ -103,9 +103,9 @@ init(){
 
 check_program_dependencies() {
 	for command in inkscape 7za cp mkdir xmlstarlet; do
-		which $command &>/dev/null
+		which ${command} &>/dev/null
 		if [ $? -ne 0 ]; then
-			printf "錯誤：本程式需要 $command 命令才能正常運作！" 1>&2
+			printf "錯誤：本程式需要 ${command} 命令才能正常運作！" 1>&2
 			exit 1
 		fi
 	done
