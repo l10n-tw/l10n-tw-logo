@@ -108,7 +108,7 @@ check_program_dependencies() {
 			printf "錯誤：本程式需要 %s 命令才能正常運作！" "${command}" 1>&2
 			exit 1
 		fi
-	done
+	done; unset command
 	return
 }; declare -fr check_program_dependencies
 
