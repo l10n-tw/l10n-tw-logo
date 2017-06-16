@@ -93,8 +93,8 @@ init(){
 	rm --recursive --force "${archive_directory}"
 	mkdir --parents "${archive_directory}"
 
-	cp "${DIRECTORY_BUILD_ARTIFACTS}/"*.svg "${archive_directory}"
-	cp "${DIRECTORY_BUILD_ARTIFACTS}/"*.png "${archive_directory}"	
+	mv "${DIRECTORY_BUILD_ARTIFACTS}/"*.svg "${archive_directory}"
+	mv "${DIRECTORY_BUILD_ARTIFACTS}/"*.png "${archive_directory}"	
 	cp "${DIRECTORY_PROJECT_ROOT}/README.markdown" "${archive_directory}"
 	
 	7za a "$DIRECTORY_BUILD_RESULTS/${SOFTWARE_IDENTIFIER}".7z "${archive_directory}"
