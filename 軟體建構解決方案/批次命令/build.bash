@@ -78,15 +78,15 @@ init(){
 		"${sanitized_design_source}"\
 		"${FILE_SOURCE_DESIGN}"
 
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.original_version.source.sh"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.background-white.source.sh"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.tai.source.sh"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.new-tai.source.sh"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.official-site-url-chinese-url.source.sh"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.dpp.source.sh"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.new-power-party.source.sh"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.china-communist.source.sh"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.lion.source.sh"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.original_version.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.background-white.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.tai.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.new-tai.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.official-site-url-chinese-url.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.dpp.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.new-power-party.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.china-communist.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.lion.source.bash"
 	
 	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}"
 	
