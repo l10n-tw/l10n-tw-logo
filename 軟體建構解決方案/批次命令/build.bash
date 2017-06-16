@@ -87,6 +87,15 @@ init(){
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.china-communist.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.lion.source.bash"
 	
+	local version; version="$(git describe --tags --always --dirty)"
+
+	# Workaround for GitHub Release's filename limitations
+	if [ "${version:$((${#version} - 1)):1}" == "版" ]; then
+		version="v${version:1:-1}"
+	else
+		version="$(git rev-parse --short HEAD)"
+	fi
+
 	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}"
 	
 	rm --recursive --force "${archive_directory}"
@@ -96,7 +105,7 @@ init(){
 	mv "${DIRECTORY_BUILD_ARTIFACTS}/"*.png "${archive_directory}"	
 	cp "${DIRECTORY_PROJECT_ROOT}/README.markdown" "${archive_directory}"
 	
-	7za a "$DIRECTORY_BUILD_RESULTS/${SOFTWARE_IDENTIFIER}".7z "${archive_directory}"
+	7za a "$DIRECTORY_BUILD_RESULTS/${SOFTWARE_IDENTIFIER}-${version}".7z "${archive_directory}"
 	
 	exit 0
 }; declare -fr init
