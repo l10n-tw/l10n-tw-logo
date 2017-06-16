@@ -1,5 +1,11 @@
-	declare new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-new-tai.svg"
-	printf "資訊：正在建構「台」版……\n"
+	declare\
+		variant_title="台"\
+		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-new-tai.svg"
+
+	printf --\
+		"資訊：正在建構「%s」版……\n"\
+		"${variant_title}"
+
 	cp "${FILE_SOURCE_DESIGN}" "${new_source_file}"
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
@@ -17,13 +23,13 @@
 		"${new_source_file}"\
 		"台版"\
 		show
-	inkscape --export-png="${DIRECTORY_BUILD_ARTIFACTS}/$(basename --suffix=.svg "${new_source_file}").png" "${new_source_file}"
+	svg_to_png\
+		"${new_source_file}"
 	
-	declare new_source_file_white_background="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-new-tai-background-white.svg"
-	printf "資訊：正在建構「台」版白背景版……\n"
-	cp "${new_source_file}" "${new_source_file_white_background}"
-	xmlstarlet edit --pf --ps --inplace --update "//@inkscape:pageopacity" --value 1 "${new_source_file_white_background}"
-	inkscape --export-png="${DIRECTORY_BUILD_ARTIFACTS}/$(basename --suffix=.svg "${new_source_file_white_background}").png" "${new_source_file_white_background}"
+	make_non_transparent_version\
+		"${variant_title}"\
+		"${new_source_file}"
 	
-	unset new_source_file
-	unset new_source_file_white_background
+	unset\
+		variant_title\
+		new_source_file

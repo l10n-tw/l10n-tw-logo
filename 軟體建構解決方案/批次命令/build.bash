@@ -79,7 +79,6 @@ init(){
 		"${FILE_SOURCE_DESIGN}"
 
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.original_version.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.background-white.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.tai.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.new-tai.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.official-site-url-chinese-url.source.bash"
@@ -147,6 +146,69 @@ manipulate_inkscape_layer_visibility() {
 			--value "${value}"\
 			"${file_name}"
 }; declare -fr manipulate_inkscape_layer_visibility
+
+manipulate_inkscape_background_transparency(){
+	local -r inkscape_svg_file="$1"; shift
+	local -r transparency="$1" # transparent not-transparent
+
+	local -r xpath="//@inkscape:pageopacity"
+	local value
+
+	case "${transparency}" in
+		transparent)
+			value=0
+			;;
+		non-transparent)
+			value=1
+			;;
+		*)
+			printf\
+				"%s: ERROR: wrong transparency parameter!\n"\
+				"${FUNCNAME[0]}"\
+				1>&2
+			exit 1
+			;;
+	esac
+
+	xmlstarlet\
+		edit\
+			--pf\
+			--ps\
+			--inplace\
+			--update "//@inkscape:pageopacity"\
+			--value 1\
+			"${inkscape_svg_file}"
+}; declare -fr manipulate_inkscape_background_transparency
+
+make_non_transparent_version(){
+	local -r source_title="$1"; shift
+	local -r source_file="$1"
+
+	local -r target_file="$(dirname "${source_file}")/$(basename --suffix=.svg "${source_file}")-non-transparent.svg"
+
+	printf --\
+		"資訊：正在建構「%s」版不透明版……\n"\
+		"${source_title}"
+
+	cp\
+		"${source_file}"\
+		"${target_file}"
+	manipulate_inkscape_background_transparency\
+		"${target_file}"\
+		non-transparent
+	svg_to_png\
+		"${target_file}"
+}; declare -fr make_non_transparent_version
+
+svg_to_png(){
+	local -r svg_file="$1"
+
+	local -r png_file="$(dirname "${svg_file}")/$(basename --suffix=.svg "${svg_file}").png"
+
+	inkscape\
+		--export-png="${png_file}"\
+		"${svg_file}"
+}; declare -fr svg_to_png
 
 ## Traps: Functions that are triggered when certain condition occurred
 ## Shell Builtin Commands » Bourne Shell Builtins » trap
