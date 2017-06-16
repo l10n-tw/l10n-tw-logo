@@ -113,6 +113,41 @@ check_program_dependencies() {
 	return
 }; declare -fr check_program_dependencies
 
+manipulate_inkscape_layer_visibility() {
+	local -r file_name="$1"; shift
+	local -r layer_name="$1"; shift
+	local -r visibility="$1" # show, hide
+
+	local -r\
+		xpath="//_:g[@inkscape:label='${layer_name}']/@style"
+	local value
+
+	case "${visibility}" in
+		show)
+			value="display:inline"
+			;;
+		hide)
+			value="display:none"
+			;;
+		*)
+			printf\
+				"%s: ERROR: wrong visibility parameter!\n"\
+				"${FUNCNAME[0]}"\
+				1>&2
+			exit 1
+			;;
+	esac
+	
+	xmlstarlet\
+		edit\
+			--pf\
+			--ps\
+			--inplace\
+			--update "${xpath}"\
+			--value "${value}"\
+			"${file_name}"
+}; declare -fr manipulate_inkscape_layer_visibility
+
 ## Traps: Functions that are triggered when certain condition occurred
 ## Shell Builtin Commands » Bourne Shell Builtins » trap
 trap_errexit(){
