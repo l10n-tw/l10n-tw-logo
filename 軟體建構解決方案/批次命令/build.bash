@@ -62,6 +62,11 @@ init(){
 	fi
 	check_program_dependencies
 
+	# Make sure the detected Git repository is correct even when working directory is not under Git repository
+	export\
+		GIT_DIR="${DIRECTORY_PROJECT_ROOT}/.git"\
+		GIT_WORK_TREE="${DIRECTORY_PROJECT_ROOT}"
+
 	local temp_dir; temp_dir="$(\
 		mktemp\
 			--directory\
