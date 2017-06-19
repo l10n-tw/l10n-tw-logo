@@ -21,10 +21,7 @@ addons:
     - xmlstarlet
 
 script:
-- mkdir --parents ~/.local/share/fonts
-- wget --output-document - https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/TW/SourceHanSansTW-Regular.otf >~/.local/share/fonts/SourceHanSansTW-Regular.otf
-- wget --output-document - https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/CN/SourceHanSansCN-Regular.otf >~/.local/share/fonts/SourceHanSansCN-Regular.otf
-- fc-cache --verbose
+- ./下載並安裝需要用到的字型.bash
 - 軟體建構解決方案/批次命令/build.bash
 
 deploy:
