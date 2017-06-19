@@ -87,7 +87,11 @@ init(){
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.china-communist.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.lion.source.bash"
 	
-	local version; version="$(git describe --tags --always --dirty)"
+	local version; version="$(git describe --tags --always)"
+
+	printf\
+		"除錯：原始版本號：%s\n"\
+		"${version}" 1>&2
 
 	# Workaround for GitHub Release's filename limitations
 	if [ "${version:$((${#version} - 1)):1}" == "版" ]; then
@@ -95,6 +99,10 @@ init(){
 	else
 		version="$(git rev-parse --short HEAD)"
 	fi
+
+	printf\
+		"除錯：修正過後的版本號：%s\n"\
+		"${version}" 1>&2
 
 	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-${version}"
 	
