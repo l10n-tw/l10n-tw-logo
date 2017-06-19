@@ -37,7 +37,7 @@ init(){
 		print_help
 		exit 1
 	fi
-	if mkdir --parents ~/.local/share/fonts; then
+	if ! mkdir --parents ~/.local/share/fonts; then
 		printf\
 			"%s: Error: Unable to create font installation directory.\n"\
 			"${RUNTIME_EXECUTABLE_NAME}"
