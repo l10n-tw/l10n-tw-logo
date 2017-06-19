@@ -66,6 +66,23 @@ init(){
 	export\
 		GIT_DIR="${DIRECTORY_PROJECT_ROOT}/.git"\
 		GIT_WORK_TREE="${DIRECTORY_PROJECT_ROOT}"
+	
+	local version; version="$(git describe --tags --always)"
+
+	printf\
+		"除錯：原始版本號：%s\n"\
+		"${version}" 1>&2
+
+	# Workaround for GitHub Release's filename limitations
+	if [ "${version:$((${#version} - 1)):1}" == "版" ]; then
+		version="v${version:1:-1}"
+	else
+		version="$(git rev-parse --short HEAD)"
+	fi
+
+	printf\
+		"除錯：修正過後的版本號：%s\n"\
+		"${version}" 1>&2
 
 	local temp_dir; temp_dir="$(\
 		mktemp\
@@ -91,23 +108,6 @@ init(){
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.new-power-party.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.china-communist.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.lion.source.bash"
-	
-	local version; version="$(git describe --tags --always)"
-
-	printf\
-		"除錯：原始版本號：%s\n"\
-		"${version}" 1>&2
-
-	# Workaround for GitHub Release's filename limitations
-	if [ "${version:$((${#version} - 1)):1}" == "版" ]; then
-		version="v${version:1:-1}"
-	else
-		version="$(git rev-parse --short HEAD)"
-	fi
-
-	printf\
-		"除錯：修正過後的版本號：%s\n"\
-		"${version}" 1>&2
 
 	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-${version}"
 	
