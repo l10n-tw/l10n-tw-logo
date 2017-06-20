@@ -35,5 +35,6 @@ deploy:
   - 建構結果/l10n-tw-logo-*.7z
   - 建構中間產物/l10n-tw-logo*/l10n-tw-logo.svg
   - 建構中間產物/l10n-tw-logo*/l10n-tw-logo.png
+  - 建構中間產物/l10n-tw-logo*/l10n-tw-logo-non-transparent.png
   on:
     tags: true
