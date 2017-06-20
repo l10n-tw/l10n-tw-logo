@@ -4,7 +4,7 @@
 
 * Inkscape
 	* 用於 logo 設計
-* 思源黑體 TW
+* 思源宋體 TW & CN
 	* 用於中文字字體
 * GNU CoreUtils
 	* 用於軟體建構程序

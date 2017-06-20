@@ -49,10 +49,10 @@ init(){
 		"${RUNTIME_EXECUTABLE_NAME}"
 	wget\
 		--output-document -\
-		https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/TW/SourceHanSansTW-Regular.otf >~/.local/share/fonts/SourceHanSansTW-Regular.otf
+		https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/TW/SourceHanSerifTW-SemiBold.otf >~/.local/share/fonts/SourceHanSerifTW-SemiBold.otf
 	wget\
 		--output-document -\
-		https://github.com/adobe-fonts/source-han-sans/raw/release/SubsetOTF/CN/SourceHanSansCN-Regular.otf >~/.local/share/fonts/SourceHanSansCN-Regular.otf
+		https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/CN/SourceHanSerifCN-SemiBold.otf >~/.local/share/fonts/SourceHanSerifCN-SemiBold.otf
 
 	printf\
 		"%s: Regenerating font cache...\n"\

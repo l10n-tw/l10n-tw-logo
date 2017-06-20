@@ -14,14 +14,6 @@
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"官方版本（品牌名）"\
-		hide
-	manipulate_inkscape_layer_visibility\
-		"${new_source_file}"\
-		"官方版本（官方網站網址）（大寫）"\
-		hide
-	manipulate_inkscape_layer_visibility\
-		"${new_source_file}"\
 		"台澎琉蘭綠東南沙底圖"\
 		show
 	manipulate_inkscape_layer_visibility\
