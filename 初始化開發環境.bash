@@ -52,7 +52,12 @@ init(){
 	git config --local include.path '../.gitconfig'
 	
 	# 安裝版本提交前 Git 掛勾程式
-	ln --symbolic --force "../../開發工具/Git 版本控制系統掛勾程式/pre-commit.sh" "${PROJECT_ROOT_DIRECTORY}"/.git/hooks/pre-commit
+	ln\
+		--symbolic\
+		--relative\
+		--force\
+		--verbose\
+		"../../開發工具/用於 GNU Bash 專案的 Git 提交版本前掛勾程式/Pre-commit Script.bash" "${PROJECT_ROOT_DIRECTORY}"/.git/hooks/pre-commit
 	
 	exit 0
 }; declare -fr init

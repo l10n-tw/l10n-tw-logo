@@ -1,3 +1,6 @@
 [submodule "開發工具/用於 SVG 的清潔過濾器"]
 	path = 開發工具/用於 SVG 的清潔過濾器
 	url = https://github.com/Lin-Buo-Ren/Clean-Filter-for-SVG
+[submodule "開發工具/用於 GNU Bash 專案的 Git 提交版本前掛勾程式"]
+	path = 開發工具/用於 GNU Bash 專案的 Git 提交版本前掛勾程式
+	url = https://github.com/Lin-Buo-Ren/Git_Pre-commit_Hook_for_GNU_Bash_Projects
