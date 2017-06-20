@@ -46,14 +46,14 @@ init(){
 				"思源宋體"
 		)"
 
-	local fontconfig_config_directory="${HOME}/.config/fontconfig/conf.d"
+	local fontconfig_config_directory="${HOME}/.config/fontconfig"
 	mkdir\
 		--parents\
 		"${fontconfig_config_directory}"
 
 	cp\
-		"${RUNTIME_EXECUTABLE_DIRECTORY}/Make Fontconfig Belive Subset OTF Font is Same as SuperOTC Font-fonts.conf"\
-		"${fontconfig_config_directory}"
+		"${RUNTIME_EXECUTABLE_DIRECTORY}/${RUNTIME_EXECUTABLE_NAME}.fontconfig.conf"\
+		"${fontconfig_config_directory}/fonts.conf"
 
 	printf\
 		"%s: Debug: \"思源宋體\" is now matched as \"%s\"\n"\

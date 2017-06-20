@@ -22,7 +22,7 @@ install:
 
 script:
 - ./下載並安裝需要用到的字型.bash
-- ./"Travis CI 支援/Make Fontconfig Belive Subset OTF Font is Same as SuperOTC Font.bash"
+- ./"Travis CI 支援/讓 Fontconfig 認為 Subset OTF 變種的思源黑體也是思源黑體.bash"
 - 軟體建構解決方案/批次命令/build.bash
 
 deploy:
