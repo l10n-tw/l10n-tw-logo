@@ -22,6 +22,7 @@ install:
 
 script:
 - ./下載並安裝需要用到的字型.bash
+- ./"Travis CI 支援/Make Fontconfig Belive Subset OTF Font is Same as SuperOTC Font.bash"
 - 軟體建構解決方案/批次命令/build.bash
 
 deploy:
