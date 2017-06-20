@@ -12,16 +12,12 @@ dist: trusty
 git:
   depth: 30
 
-addons:
-  apt:
-    packages:
-    - realpath      # Merged to GNU Coreutils in Ubuntu 16.04
-    - inkscape
-    - p7zip
-    - xmlstarlet
-
 before_install:
   - sudo add-apt-repository -y 'ppa:inkscape.dev/stable'
+
+install:
+  - sudo apt-get install -y realpath # Merged to GNU Coreutils in Ubuntu 16.04
+  - sudo apt-get install -y inkscape p7zip xmlstarlet
 
 script:
 - ./下載並安裝需要用到的字型.bash
