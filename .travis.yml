@@ -14,6 +14,8 @@ git:
 
 addons:
   apt:
+    sources:
+#    - debian-sid    # Grab shellcheck from the Debian repo (o_O)
     packages:
     - realpath      # Merged to GNU Coreutils in Ubuntu 16.04
     - inkscape
