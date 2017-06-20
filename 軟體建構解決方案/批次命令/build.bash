@@ -227,6 +227,7 @@ svg_to_png(){
 	local -r png_file="$(dirname "${svg_file}")/$(basename --suffix=.svg "${svg_file}").png"
 
 	inkscape\
+		--without-gui\
 		--export-png="${png_file}"\
 		"${svg_file}"\
 		>/dev/null
