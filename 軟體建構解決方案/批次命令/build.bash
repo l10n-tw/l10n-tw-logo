@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#shellcheck disable=SC2034
+#shellcheck disable=SC2034,SC1090
 # 軟體建構程式
 # Ｖ字龍 <Vdragon.Taiwan@gmail.com> © 2017
 
@@ -31,7 +31,8 @@ declare -r\
 	SOFTWARE_IDENTIFIER="l10n-tw-logo"
 
 declare -r\
-	DIRECTORY_PROJECT_ROOT="$(realpath --strip "${RUNTIME_EXECUTABLE_DIRECTORY}/../..")"
+	DIRECTORY_PROJECT_ROOT
+DIRECTORY_PROJECT_ROOT="$(realpath --strip "${RUNTIME_EXECUTABLE_DIRECTORY}/../..")"
 
 declare -r\
 	DIRECTORY_PROJECT_SOURCE_CODE="${DIRECTORY_PROJECT_ROOT}/來源碼"\
@@ -92,8 +93,8 @@ init(){
 	)"
 
 	local sanitized_design_source="${temp_dir}/${SOFTWARE_IDENTIFIER}.sanitized.svg"
-	cat "${FILE_SOURCE_DESIGN}"\
-		| "${SVG_CLEAN_FILTER}"\
+	"${SVG_CLEAN_FILTER}"\
+		<"${FILE_SOURCE_DESIGN}"\
 		>"${sanitized_design_source}"
 	mv\
 		--force\
@@ -125,8 +126,7 @@ init(){
 
 check_program_dependencies() {
 	for command in inkscape 7zr cp mkdir xmlstarlet; do
-		which ${command} &>/dev/null
-		if [ $? -ne 0 ]; then
+		if ! which ${command} &>/dev/null; then
 			printf "錯誤：本程式需要 %s 命令才能正常運作！" "${command}" 1>&2
 			exit 1
 		fi

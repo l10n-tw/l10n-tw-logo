@@ -1,6 +1,8 @@
 	declare\
 		variant_title="官方版本"\
-		target_file="${DIRECTORY_BUILD_ARTIFACTS}/$(basename "${FILE_SOURCE_DESIGN}")"
+		target_file
+
+	target_file="${DIRECTORY_BUILD_ARTIFACTS}/$(basename "${FILE_SOURCE_DESIGN}")"
 
 	printf --\
 		"資訊：正在建構「%s」版……\n"\
