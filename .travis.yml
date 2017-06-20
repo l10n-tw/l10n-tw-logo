@@ -14,13 +14,14 @@ git:
 
 addons:
   apt:
-    sources:
-    - sourceline 'ppa:inkscape.dev/stable'
     packages:
     - realpath      # Merged to GNU Coreutils in Ubuntu 16.04
     - inkscape
     - p7zip
     - xmlstarlet
+
+before_install:
+  - sudo add-apt-repository -y 'ppa:inkscape.dev/stable'
 
 script:
 - ./下載並安裝需要用到的字型.bash
