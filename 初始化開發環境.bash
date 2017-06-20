@@ -57,7 +57,7 @@ init(){
 		--relative\
 		--force\
 		--verbose\
-		"../../開發工具/用於 GNU Bash 專案的 Git 提交版本前掛勾程式/Pre-commit Script.bash" "${PROJECT_ROOT_DIRECTORY}"/.git/hooks/pre-commit
+		"開發工具/用於 GNU Bash 專案的 Git 提交版本前掛勾程式/Git Pre-commit Hook for GNU Bash Projects.bash" "${PROJECT_ROOT_DIRECTORY}"/.git/hooks/pre-commit
 	
 	exit 0
 }; declare -fr init
