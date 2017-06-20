@@ -25,6 +25,8 @@ if [ -v "BASH_SOURCE[0]" ]; then
 fi
 declare -ar RUNTIME_COMMANDLINE_PARAMETERS=("${@}")
 
+declare just_download="N"
+
 ## init function: entrypoint of main program
 ## This function is called near the end of the file,
 ## with the script's command-line parameters as arguments
@@ -47,12 +49,22 @@ init(){
 	printf\
 		"%s: Downloading required fonts...\n"\
 		"${RUNTIME_EXECUTABLE_NAME}"
+	local download_directory="${HOME}/.local/share/fonts"
+
+	if [ "${just_download}" == "Y" ]; then
+		download_directory="${RUNTIME_EXECUTABLE_DIRECTORY}/資源/字型"
+	fi
 	wget\
 		--output-document -\
-		https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/TW/SourceHanSerifTW-SemiBold.otf >~/.local/share/fonts/SourceHanSerifTW-SemiBold.otf
+		https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/TW/SourceHanSerifTW-SemiBold.otf\
+		>"${download_directory}/SourceHanSerifTW-SemiBold.otf"
 	wget\
 		--output-document -\
-		https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/CN/SourceHanSerifCN-SemiBold.otf >~/.local/share/fonts/SourceHanSerifCN-SemiBold.otf
+		https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/CN/SourceHanSerifCN-SemiBold.otf\
+		>"${download_directory}/SourceHanSerifCN-SemiBold.otf"
+	if [ "${just_download}" == "Y" ]; then
+		exit 0
+	fi
 
 	printf\
 		"%s: Regenerating font cache...\n"\
@@ -117,6 +129,11 @@ process_commandline_parameters() {
 				"--debug"\
 				|"-d")
 					enable_debug="Y"
+					;;
+				'--just-download' \
+				|'-j')
+					# Just download the fonts under project root directory
+					just_download="Y"
 					;;
 				*)
 					printf "ERROR: Unknown command-line argument \"%s\"\n" "${parameters[0]}" >&2
