@@ -112,6 +112,10 @@ init(){
 		資源/字型/SourceHanSerifTW-SemiBold.subset.ttx
 	ttx\
 		-f\
+		--flavor woff\
+		資源/字型/SourceHanSerifTW-SemiBold.subset.ttx
+	ttx\
+		-f\
 		--flavor woff2\
 		資源/字型/SourceHanSerifTW-SemiBold.subset.ttx
 
