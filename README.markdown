@@ -1,7 +1,7 @@
 # 臺灣在地化社群的標誌<br />L10n-TW's Logo
 [![最新修訂版本在 Travis CI 的建構狀態](https://travis-ci.org/l10n-tw/l10n-tw-logo.svg?branch=%E4%B8%BB%E8%A6%81%E9%96%8B%E7%99%BC%E5%88%86%E6%94%AF)](https://travis-ci.org/l10n-tw/l10n-tw-logo)  
 <https://github.com/l10n-tw/l10n-tw-logo>  
-![目前的標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo.png)
+![目前的標誌](https://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo.svg)
 
 ## 特色<br>Features
 * 形象採用由 [Finemann](https://en.wikipedia.org/wiki/User:Finemann) 所設計的[風獅爺](https://zh.wikipedia.org/wiki/%E9%A2%A8%E7%8D%85%E7%88%BA)
@@ -15,13 +15,13 @@
 以下是曾經採用的官方版本
 
 #### 西洋獅版
-![西洋獅版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-lion.png)
+![西洋獅版標誌](https://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-lion.svg)
 
 * 採用幾何圖像構成的西洋獅作為形象
 
 #### 台／臺澎琉蘭綠東南沙版
-![臺澎琉蘭綠東南沙版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-tai.png)
-![台澎琉蘭綠東南沙版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-new-tai.png)
+![臺澎琉蘭綠東南沙版標誌](https://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-tai.svg)
+![台澎琉蘭綠東南沙版標誌](https://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-new-tai.svg)
 
 * 包含台澎琉蘭綠龜東南沙群島、*不包含金馬*
 
@@ -35,24 +35,24 @@
 *歡迎提交您所設計的版本*
 
 #### 欸嘍十恩點踢搭補魯版
-![欸嘍十恩點踢搭補魯版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-chinese-url.png)
+![欸嘍十恩點踢搭補魯版標誌](https://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-chinese-url.svg)
 
 * 使用漢語音譯的網址的版本
 
 #### 民主進步黨版
-![民主進步黨版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-dpp.png)
+![民主進步黨版標誌](https://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-dpp.svg)
 
 * 使用民主進步黨黨徽作為形象
 
 #### 時代力量版（以及「力」字版）
-![時代力量版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-new-power-party.png)
-![時代力量「力」版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-new-power-party-with-li.png)
+![時代力量版標誌](https://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-new-power-party.svg)
+![時代力量「力」版標誌](https://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-new-power-party-with-li.svg)
 
 * 以台／臺澎琉蘭綠東南沙為底圖，但置換為時代力量黃色
 * 附帶包含「力」字標誌的版本
 
 #### 中華人民共和國共產黨版
-![中華人民共和國共產黨版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-china-communist.png)
+![中華人民共和國共產黨版標誌](https://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-china-communist.svg)
 
 * 以中共為形象的微妙版本
 
