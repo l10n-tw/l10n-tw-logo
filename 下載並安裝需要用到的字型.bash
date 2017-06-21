@@ -49,11 +49,8 @@ init(){
 	printf\
 		"%s: Downloading required fonts...\n"\
 		"${RUNTIME_EXECUTABLE_NAME}"
-	local download_directory="${HOME}/.local/share/fonts"
-
-	if [ "${just_download}" == "Y" ]; then
-		download_directory="${RUNTIME_EXECUTABLE_DIRECTORY}/資源/字型"
-	fi
+	
+	local download_directory="${RUNTIME_EXECUTABLE_DIRECTORY}/資源/字型"
 	wget\
 		--output-document -\
 		https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/TW/SourceHanSerifTW-SemiBold.otf\
@@ -65,6 +62,18 @@ init(){
 	if [ "${just_download}" == "Y" ]; then
 		exit 0
 	fi
+
+	local install_directory="${HOME}/.local/share/fonts"
+	ln\
+		--symbolic\
+		--verbose\
+		"${download_directory}/SourceHanSerifTW-SemiBold.otf"\
+		"${install_directory}"
+	ln\
+		--symbolic\
+		--verbose\
+		"${download_directory}/SourceHanSerifCN-SemiBold.otf"\
+		"${install_directory}"
 
 	printf\
 		"%s: Regenerating font cache...\n"\
