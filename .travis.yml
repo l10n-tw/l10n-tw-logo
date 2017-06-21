@@ -30,10 +30,10 @@ before_deploy:
   - cp README.markdown "GitHub Pages 網站"
 
 deploy:
-  skip_cleanup: true
   - provider: releases
     api_key:
       secure: XXWRJQelwOP9FzGJwQ55Gsm+VHRJwusrlXOYeMgUwZMf8s/OqKZHVt6F4wjnz3fe3dm87gUyA1ItIdADZfSCX07r+lRw2AeekLZBkZGFNPrVGtjBJaIiqFXMDsvA5VYVZu2xQLBC1joqZAJ4HzeIAnWqj3nev9Jsi6mlZOYXJC6hEeiw680/jDRjA2++lM+B9MKgt9QZHNaqcTjC7s2si7+E9pXGK31izMjX34hiAKpZhYcmVM9xeITRcfSXLAZFVFO8Xmz/SwrdUzOGIy0Xa2alMC2EgojBZBkaGTYr2lmJtIa/0gO9fyi+VIm9yna+jiuugTxZmpKt1fDsdClwtyG2ipG1RWx+cEPDGTL1pQnEM8c9KsBh8A6bCozLGXH5NAGxweBDIkm6BCyfQHQTyb5N3vxekkqs/CyuI5x9Hz0HDKR4ExJ539Q3lH1gjKCvdu4GOAzZH4JGsJ8OgPkUKgOFT4w96p7KUaiqObRrM84uzkLQ7xv4++a0+eMGg4IMx/imF5c2EpHQce4tzHPTFVttZ8pA/8Dmli3IxItJ7Ndd2ASnf4H2Nw/R8akj6r5YBGg4/OPTE5lx9Va6UKHPIW0lLTpuiOyA6nSs36JUmoZTrECflcrgO5SGiXgr4L7Wd1gvpHyzDWcDXgz5oqxNMwACQ79EyU3H944YtZa24P4=
+    skip_cleanup: true
     file_glob: true
     file: 
       - 建構結果/l10n-tw-logo-*.7z
@@ -44,6 +44,7 @@ deploy:
       tags: true
   - provider: pages
     github_token: $GITHUB_ACCESS_TOKEN_HIDDEN
+    skip_cleanup: true
     local_dir: "GitHub Pages 網站"
     fqdn: l10n.tw
     on:
