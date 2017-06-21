@@ -21,7 +21,8 @@ addons:
       - xmlstarlet
 
 install:
-  - pip install --prefix "${HOME}" fonttools
+  - pip install --user fonttools
+  - PATH="${HOME}/.local/bin:${PATH}"
 
 script:
   - ./下載並安裝需要用到的字型.bash
