@@ -23,6 +23,20 @@
 			</cc:License>
 		</rdf:RDF>
 	</metadata>
+	<style>
+		@font-face {
+		font-family: '思源宋體';
+		src: url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.otf');
+		src:
+			url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.eot') format('embedded-opentype'),
+			url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.woff2') format('woff2'),
+			url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.woff') format('woff'),
+			url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.ttf') format('truetype'),
+			url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.svg') format('svg');
+		font-weight: SemiBold;
+		font-style: normal;
+		}
+	</style>
 	<g inkscape:label="台澎琉蘭綠東南沙底圖" inkscape:groupmode="layer" id="layer1" transform="translate(0,-197.00002)" style="display:none">
 		<flowRoot xml:space="preserve" id="flowRoot10" style="font-style:normal;font-weight:normal;font-size:40px;line-height:200px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" transform="matrix(0.26458333,0,0,0.26458333,0,197.00002)">
 			<flowRegion id="flowRegion12">

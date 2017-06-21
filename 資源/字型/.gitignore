@@ -1,1 +1,7 @@
 *.otf
+
+# FontTools XML-wise font export
+*.ttx
+
+# W3C WOFF*
+*.woff*
