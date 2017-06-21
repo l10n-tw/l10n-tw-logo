@@ -26,13 +26,13 @@
 	<style>
 		@font-face {
 		font-family: '思源宋體';
-		src: url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.otf');
+		src: url('//l10n.tw/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.otf');
 		src:
-			url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.eot') format('embedded-opentype'),
-			url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.woff2') format('woff2'),
-			url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.woff') format('woff'),
-			url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.ttf') format('truetype'),
-			url('//l10n-tw.github.io/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.svg') format('svg');
+			url('//l10n.tw/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.eot') format('embedded-opentype'),
+			url('//l10n.tw/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.woff2') format('woff2'),
+			url('//l10n.tw/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.woff') format('woff'),
+			url('//l10n.tw/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.ttf') format('truetype'),
+			url('//l10n.tw/l10n-tw-logo/字型/SourceHanSerifTW-SemiBold.subset.svg') format('svg');
 		font-weight: SemiBold;
 		font-style: normal;
 		}
