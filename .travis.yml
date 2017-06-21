@@ -43,7 +43,7 @@ deploy:
     on:
       tags: true
   - provider: pages
-    github_token: "${GITHUB_ACCESS_TOKEN_HIDDEN}"
+    github_token: $GITHUB_ACCESS_TOKEN_HIDDEN
     local_dir: "GitHub Pages 網站"
     fqdn: l10n.tw
     on:
