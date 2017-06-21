@@ -1,5 +1,5 @@
 	declare\
-		variant_title="台"\
+		variant_title="台澎琉蘭綠東南沙版"\
 		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-new-tai.svg"
 
 	printf --\

@@ -1,6 +1,6 @@
 	declare\
-		variant_title="臺"\
-		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-new-tai.svg"
+		variant_title="臺澎琉蘭綠東南沙版"\
+		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-tai.svg"
 
 	printf --\
 		"資訊：正在建構「%s」版……\n"\
