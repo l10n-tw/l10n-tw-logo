@@ -48,4 +48,4 @@ deploy:
     local_dir: "GitHub Pages 網站"
     fqdn: l10n.tw
     on:
-      tags: true
+      branch: 主要開發分支
