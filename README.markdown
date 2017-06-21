@@ -58,8 +58,8 @@
 
 ## 未來開發目標<br>Future Development Goals
 * 多語言支援
-* 多政治立場支援  
-注：此特色代表我們接受各種支援特定立場 logo 的 PR，惟我們保留是否預設使用特定立場的權利
+* Webfont 支援
+* 文字轉路徑版
 
 ## 取得軟體<br>Acquire Software
 請到[釋出軟體](https://github.com/l10n-tw/l10n-tw-logo/releases)頁面下載軟體與軟體來源碼。
