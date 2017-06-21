@@ -10,14 +10,6 @@
 * 來源碼為 Inkscape SVG，可自由放大縮小產生各種尺寸的圖
 * 由數個 Inkscape 圖層組合而成，可以製作各種衍生版本
 
-## 原始設計者<br>Original Designer
-Ｖ字龍 &lt;<Vdragon.Taiwan@gmail.com>&gt;
-
-## 智慧財產授權條款<br>Intellectual Property License
-本軟體採用 [Creative Commons 姓名標示－相同方式分享授權條款第 4.0 版或其任意更近期版本](https://creativecommons.org/licenses/by-sa/4.0/)釋出供任何人在授權條款範圍內自由使用。
-
-本專案亦使用了其他人所做的智慧財產，請參考[資源/圖片](https://github.com/l10n-tw/l10n-tw-logo/tree/HEAD/資源/圖片)的說明文件的說明。
-
 ## 衍生版本<br>Derived Variants
 ### 官方版本<br>Official Variants
 以下是曾經採用的官方版本
@@ -71,3 +63,11 @@
 
 ## 取得軟體<br>Acquire Software
 請到[釋出軟體](https://github.com/l10n-tw/l10n-tw-logo/releases)頁面下載軟體與軟體來源碼。
+
+## 原始設計者<br>Original Designer
+Ｖ字龍 &lt;<Vdragon.Taiwan@gmail.com>&gt;
+
+## 智慧財產授權條款<br>Intellectual Property License
+本軟體採用 [Creative Commons 姓名標示－相同方式分享授權條款第 4.0 版或其任意更近期版本](https://creativecommons.org/licenses/by-sa/4.0/)釋出供任何人在授權條款範圍內自由使用。
+
+本專案亦使用了其他人所做的智慧財產，請參考[資源/圖片](https://github.com/l10n-tw/l10n-tw-logo/tree/HEAD/資源/圖片)的說明文件的說明。
