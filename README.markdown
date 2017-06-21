@@ -1,4 +1,5 @@
 # 臺灣在地化社群的標誌<br />L10n-TW's Logo
+<https://github.com/l10n-tw/l10n-tw-logo>  
 ![目前的標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo.png)
 
 ## 特色<br>Features
