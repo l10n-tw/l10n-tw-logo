@@ -107,17 +107,9 @@ init(){
 # 			--value '思源宋體'\
 # 			資源/字型/SourceHanSerifTW-SemiBold.subset.ttx
 
-	ttx\
-		-f\
-		資源/字型/SourceHanSerifTW-SemiBold.subset.ttx
-	ttx\
-		-f\
-		--flavor woff\
-		資源/字型/SourceHanSerifTW-SemiBold.subset.ttx
-	ttx\
-		-f\
-		--flavor woff2\
-		資源/字型/SourceHanSerifTW-SemiBold.subset.ttx
+	export_subset_fonts\
+		"資源/字型/SourceHanSerifTW-SemiBold.subset.ttx"\
+		"資源/字型/SourceHanSerifCN-SemiBold.subset.ttx"
 
 	# FIXME: Merge CN glyphs to TW
 # 	ttx\
@@ -127,6 +119,23 @@ init(){
 
 	exit 0
 }; declare -fr init
+
+export_subset_fonts(){
+	for ttx_file in "$@"; do
+		ttx\
+			-f\
+			"${ttx_file}"
+		ttx\
+			-f\
+			--flavor woff\
+			"${ttx_file}"
+		ttx\
+			-f\
+			--flavor woff2\
+			"${ttx_file}"
+	done; unset ttx_file
+
+}; declare -fr export_subset_fonts
 
 ## Traps: Functions that are triggered when certain condition occurred
 ## Shell Builtin Commands » Bourne Shell Builtins » trap

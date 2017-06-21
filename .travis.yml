@@ -34,7 +34,7 @@ script:
 before_deploy:
   - cp 建構中間產物/l10n-tw-logo*/* "GitHub Pages 網站/圖片"
   - cp README.markdown "GitHub Pages 網站"
-  - cp 資源/字型/SourceHanSerifTW-SemiBold.subset.otf 資源/字型/SourceHanSerifTW-SemiBold.subset.woff* "GitHub Pages 網站/字型"
+  - cp 資源/字型/SourceHanSerif*-SemiBold.subset.otf 資源/字型/SourceHanSerif*-SemiBold.subset.woff* "GitHub Pages 網站/字型"
 
 deploy:
   - provider: releases

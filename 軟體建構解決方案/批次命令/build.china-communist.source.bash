@@ -26,6 +26,12 @@
 		"${variant_title}"\
 		"${new_source_file}"
 	
+	# 讓這個版本支援 Web font 的暫時處理措施
+	sed\
+		--in-place\
+		"s/SourceHanSerifTW/SourceHanSerifCN/"\
+		"${DIRECTORY_BUILD_ARTIFACTS}/$(basename --suffix=.svg "${new_source_file}")"*.svg
+
 	unset\
 		variant_title\
 		new_source_file
