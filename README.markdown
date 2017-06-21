@@ -23,12 +23,19 @@
 *歡迎提交您所設計的版本*
 
 #### 西洋獅版
+![西洋獅版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-lion.png)
+
 * 採用幾何圖像構成的西洋獅作為形象
 
 #### 欸嘍十恩點踢搭補魯版
+![欸嘍十恩點踢搭補魯版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-chinese-url.png)
+
 * 使用漢語音譯的網址的版本
 
 #### 台／臺澎琉蘭綠東南沙版
+![臺澎琉蘭綠東南沙版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-tai.png)
+![台澎琉蘭綠東南沙版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-new-tai.png)
+
 * 包含台澎琉蘭綠龜東南沙群島、*不包含金馬*
 
 ##### 注意事項<br>Nota Bene
@@ -37,13 +44,20 @@
 雖然的確看起來很像但實際上本配色設定與台灣民主進步黨無關，我們也不是台灣民主進步黨的外圍組織，特此聲明。
 
 #### 民主進步黨版
+![民主進步黨版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-dpp.png)
+
 * 使用民主進步黨黨徽作為形象
 
 #### 時代力量版（以及「力」字版）
+![時代力量版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-new-power-party.png)
+![時代力量「力」版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-new-power-party-with-li.png)
+
 * 以台／臺澎琉蘭綠東南沙為底圖，但置換為時代力量黃色
 * 附帶包含「力」字標誌的版本
 
 #### 中華人民共和國共產黨版
+![中華人民共和國共產黨版標誌](https://l10n-tw.github.io/l10n-tw-logo/圖片/l10n-tw-logo-china-communist.png)
+
 * 以中共為形象的微妙版本
 
 ## 未來開發目標<br>Future Development Goals
