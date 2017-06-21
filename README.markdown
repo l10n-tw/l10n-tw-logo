@@ -58,7 +58,6 @@
 
 ## 未來開發目標<br>Future Development Goals
 * 多語言支援
-* Webfont 支援
 * 文字轉路徑版
 
 ## 取得軟體<br>Acquire Software
