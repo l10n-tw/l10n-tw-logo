@@ -46,6 +46,5 @@ deploy:
     github_token: $GITHUB_ACCESS_TOKEN_HIDDEN
     skip_cleanup: true
     local_dir: "GitHub Pages 網站"
-    fqdn: l10n.tw
     on:
       branch: 主要開發分支
