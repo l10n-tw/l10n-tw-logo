@@ -1,6 +1,6 @@
 	declare\
-		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-mandarin-domain.svg"\
-		variant_title="欸嘍十恩點踢搭補魯"
+		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-unofficial-mandarin-domain.svg"\
+		variant_title="（非官方）欸嘍十恩點踢搭補魯"
 
 	printf --\
 		"資訊：正在建構「%s」版……\n"\
@@ -10,11 +10,11 @@
 
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"layer-official-site-domain-capitalized"\
+		"layer-site-domain-capitalized"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"layer-variant-mandarin-domain"\
+		"layer-variant-unofficial-mandarin-domain"\
 		show
 	svg_to_png\
 		"${new_source_file}"

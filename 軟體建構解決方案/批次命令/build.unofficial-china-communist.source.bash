@@ -1,6 +1,6 @@
 	declare\
-		variant_title="中華人民共和國共產黨"\
-		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-china-communist.svg"
+		variant_title="（非官方）中華人民共和國共產黨"\
+		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-unofficial-china-communist.svg"
 
 	printf --\
 		"資訊：正在建構「%s」版……\n"\
@@ -9,15 +9,15 @@
 	cp "${FILE_SOURCE_DESIGN}" "${new_source_file}"
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"layer-official-image-shisa"\
+		"layer-variant-shisa"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"layer-official-brand"\
+		"layer-brand"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"layer-variant-china-communist"\
+		"layer-variant-unofficial-china-communist"\
 		show
 	svg_to_png\
 		"${new_source_file}"

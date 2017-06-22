@@ -20,8 +20,8 @@
 * 採用幾何圖像構成的西洋獅作為形象
 
 #### 台／臺澎琉蘭綠東南沙版
-[![臺澎琉蘭綠東南沙版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-tai.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-tai.svg)
-[![台澎琉蘭綠東南沙版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-new-tai.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-new-tai.svg)
+[![臺澎琉蘭綠東南沙版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-taiwan-sovereign-region.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-taiwan-sovereign-region.svg)
+[![台澎琉蘭綠東南沙版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-taiwan-sovereign-region-new-tai.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-taiwan-sovereign-region-new-tai.svg)
 
 * 包含台澎琉蘭綠龜東南沙群島、*不包含金馬*
 
@@ -35,24 +35,24 @@
 *歡迎提交您所設計的版本*
 
 #### 欸嘍十恩點踢搭補魯版
-[![欸嘍十恩點踢搭補魯版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-mandarin-domain.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-mandarin-domain.svg)
+[![欸嘍十恩點踢搭補魯版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-unofficial-mandarin-domain.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-unofficial-mandarin-domain.svg)
 
 * 使用漢語音譯的網址的版本
 
 #### 民主進步黨版
-[![民主進步黨版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-dpp.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-dpp.svg)
+[![民主進步黨版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-unofficial-dpp.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-unofficial-dpp.svg)
 
 * 使用民主進步黨黨徽作為形象
 
 #### 時代力量版（以及「力」字版）
-[![時代力量版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-new-power-party.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-new-power-party.svg)
-[![時代力量「力」版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-new-power-party-with-li.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-new-power-party-with-li.svg)
+[![時代力量版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-unofficial-new-power-party.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-unofficial-new-power-party.svg)
+[![時代力量「力」版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-unofficial-new-power-party-with-li.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-unofficial-new-power-party-with-li.svg)
 
 * 以台／臺澎琉蘭綠東南沙為底圖，但置換為時代力量黃色
 * 附帶包含「力」字標誌的版本
 
 #### 中華人民共和國共產黨版
-[![中華人民共和國共產黨版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-china-communist.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-china-communist.svg)
+[![中華人民共和國共產黨版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-unofficial-china-communist.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-unofficial-china-communist.svg)
 
 * 以中共為形象的微妙版本
 

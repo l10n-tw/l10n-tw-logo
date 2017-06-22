@@ -100,14 +100,14 @@ init(){
 		"${sanitized_design_source}"\
 		"${FILE_SOURCE_DESIGN}"
 
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.official.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.tai.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.new-tai.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.mandarin-domain.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.dpp.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.new-power-party.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.china-communist.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.shisa.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.western-lion.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.taiwan-sovereign-region.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.taiwan-sovereign-region-new-tai.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-mandarin-domain.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-dpp.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-new-power-party.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-china-communist.source.bash"
 
 	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-${version}"
 	

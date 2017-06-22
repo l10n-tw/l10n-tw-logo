@@ -1,5 +1,5 @@
 	declare\
-		variant_title="官方版本"\
+		variant_title="風獅爺"\
 		target_file
 
 	target_file="${DIRECTORY_BUILD_ARTIFACTS}/$(basename "${FILE_SOURCE_DESIGN}")"

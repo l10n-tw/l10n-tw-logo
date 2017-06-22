@@ -4,11 +4,11 @@
 	cp "${FILE_SOURCE_DESIGN}" "${new_source_file}"
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"layer-official-image-shisa"\
+		"layer-variant-shisa"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"layer-official-image-western-lion"\
+		"layer-variant-western-lion"\
 		show
 	svg_to_png\
 		"${new_source_file}"

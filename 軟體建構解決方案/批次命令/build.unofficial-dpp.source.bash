@@ -1,6 +1,6 @@
 	declare\
-		variant_title="民主進步黨"\
-		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-dpp.svg"
+		variant_title="（非官方）民主進步黨"\
+		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-unofficial-dpp.svg"
 
 	printf --\
 		"資訊：正在建構「%s」版……\n"\
@@ -10,7 +10,7 @@
 	sed --in-place s/18a303/009a00/g "${new_source_file}"
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"layer-official-image-shisa"\
+		"layer-variant-shisa"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
@@ -18,7 +18,7 @@
 		show
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"layer-variant-dpp"\
+		"layer-variant-unofficial-dpp"\
 		show
 	svg_to_png\
 		"${new_source_file}"

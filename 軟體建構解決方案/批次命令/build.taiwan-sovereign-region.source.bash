@@ -1,6 +1,6 @@
 	declare\
 		variant_title="臺澎琉蘭綠東南沙版"\
-		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-tai.svg"
+		new_source_file="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-taiwan-sovereign-region.svg"
 
 	printf --\
 		"資訊：正在建構「%s」版……\n"\
@@ -9,7 +9,7 @@
 	cp "${FILE_SOURCE_DESIGN}" "${new_source_file}"
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"layer-official-image-shisa"\
+		"layer-variant-shisa"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
