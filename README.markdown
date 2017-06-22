@@ -15,7 +15,7 @@
 以下是曾經採用的官方版本
 
 #### 西洋獅版
-[![西洋獅版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-lion.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-lion.svg)
+[![西洋獅版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-lion.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-western-lion.svg)
 
 * 採用幾何圖像構成的西洋獅作為形象
 
@@ -35,7 +35,7 @@
 *歡迎提交您所設計的版本*
 
 #### 欸嘍十恩點踢搭補魯版
-[![欸嘍十恩點踢搭補魯版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-chinese-url.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-chinese-url.svg)
+[![欸嘍十恩點踢搭補魯版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-chinese-url.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-mandarin-domain.svg)
 
 * 使用漢語音譯的網址的版本
 

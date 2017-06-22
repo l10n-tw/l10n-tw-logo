@@ -9,15 +9,15 @@
 	cp "${FILE_SOURCE_DESIGN}" "${new_source_file}"
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"官方版本（LION 版v2）"\
+		"layer-official-image-shisa"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"官方版本（品牌名）"\
+		"layer-official-brand"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"中華人民共和國共產黨版"\
+		"layer-variant-china-communist"\
 		show
 	svg_to_png\
 		"${new_source_file}"

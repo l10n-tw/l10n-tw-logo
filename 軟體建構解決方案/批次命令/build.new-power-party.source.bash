@@ -10,11 +10,11 @@
 
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"官方版本（LION 版v2）"\
+		"layer-official-image-shisa"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"台澎琉蘭綠東南沙底圖"\
+		"layer-background-taiwan-sovereign-region"\
 		show
 	sed --in-place s/18a303/f7bf03/g "${new_source_file}"
 
@@ -41,16 +41,16 @@
 
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"官方版本（LION 版v2）"\
+		"layer-official-image-shisa"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"台澎琉蘭綠東南沙底圖"\
+		"layer-background-taiwan-sovereign-region"\
 		show
 	sed --in-place s/18a303/f7bf03/g "${new_source_file}"
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"時代力量黨版"\
+		"layer-variant-new-power-party"\
 		show
 
 	svg_to_png\

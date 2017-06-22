@@ -9,19 +9,19 @@
 	cp "${FILE_SOURCE_DESIGN}" "${new_source_file}"
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"官方版本（LION 版v2）"\
+		"layer-official-image-shisa"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"台澎琉蘭綠東南沙底圖"\
+		"layer-background-taiwan-sovereign-region"\
 		show
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"官方版本（品牌名）"\
+		"layer-official-brand"\
 		hide
 	manipulate_inkscape_layer_visibility\
 		"${new_source_file}"\
-		"台版"\
+		"layer-variant-new-tai"\
 		show
 	svg_to_png\
 		"${new_source_file}"

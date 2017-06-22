@@ -100,14 +100,14 @@ init(){
 		"${sanitized_design_source}"\
 		"${FILE_SOURCE_DESIGN}"
 
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.original_version.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.official.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.tai.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.new-tai.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.official-site-url-chinese-url.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.mandarin-domain.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.dpp.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.new-power-party.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.china-communist.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.lion.source.bash"
+	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.western-lion.source.bash"
 
 	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-${version}"
 	
@@ -135,11 +135,11 @@ check_program_dependencies() {
 
 manipulate_inkscape_layer_visibility() {
 	local -r file_name="$1"; shift
-	local -r layer_name="$1"; shift
+	local -r layer_identifier="$1"; shift
 	local -r visibility="$1" # show, hide
 
 	local -r\
-		xpath="//_:g[@inkscape:label='${layer_name}']/@style"
+		xpath="//_:g[@id='${layer_identifier}']/@style"
 	local value
 
 	case "${visibility}" in
