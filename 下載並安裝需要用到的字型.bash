@@ -50,7 +50,7 @@ init(){
 		"%s: Downloading required fonts...\n"\
 		"${RUNTIME_EXECUTABLE_NAME}"
 	
-	local download_directory="${RUNTIME_EXECUTABLE_DIRECTORY}/資源/字型"
+	local download_directory="${RUNTIME_EXECUTABLE_DIRECTORY}/字型"
 	wget\
 		--output-document -\
 		https://github.com/adobe-fonts/source-han-serif/raw/release/SubsetOTF/TW/SourceHanSerifTW-SemiBold.otf\
