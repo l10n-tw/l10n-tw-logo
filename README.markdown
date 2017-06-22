@@ -9,6 +9,7 @@
 * 英文網址使用形似「獅子(LION)」的大寫版本，與形象相呼應
 * 來源碼為 Inkscape SVG，可自由放大縮小產生各種尺寸的圖
 * 由數個 Inkscape 圖層組合而成，可以製作各種衍生版本
+* 喜歡臺？喜歡台？通通滿足你
 
 ## 衍生版本<br>Derived Variants
 ### 官方衍伸版本<br>Official Variants
