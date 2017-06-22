@@ -18,6 +18,10 @@
 		"${variant_title}"\
 		"${target_file}"
 
+	make_new_tai_version\
+		"${variant_title}"\
+		"${target_file}"
+
 	unset\
 		variant_title\
 		target_file

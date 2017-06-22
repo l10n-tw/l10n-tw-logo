@@ -103,7 +103,6 @@ init(){
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.shisa.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.western-lion.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.taiwan-sovereign-region.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.taiwan-sovereign-region-new-tai.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-mandarin-domain.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-dpp.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-new-power-party.source.bash"
@@ -200,6 +199,46 @@ manipulate_inkscape_background_transparency(){
 			--value 1\
 			"${inkscape_svg_file}"
 }; declare -fr manipulate_inkscape_background_transparency
+
+make_new_tai_version(){
+	local -r source_title="$1"; shift
+	local -r source_file="$1"
+
+	local -r target_file="$(
+		dirname\
+			"${source_file}"
+	)/$(
+		basename\
+			--suffix=.svg\
+			"${source_file}"
+	)-new-tai.svg"
+	local -r target_title="${source_title}（台版）"
+
+	printf --\
+		"資訊：正在建構「%s」版台版……\n"\
+		"${source_title}"
+
+	cp\
+		"${source_file}"\
+		"${target_file}"
+
+	manipulate_inkscape_layer_visibility\
+		"${target_file}"\
+		"layer-brand"\
+		hide
+	manipulate_inkscape_layer_visibility\
+		"${target_file}"\
+		"layer-variant-new-tai"\
+		show
+
+	svg_to_png\
+		"${target_file}"
+	
+	make_non_transparent_version\
+		"${target_title}"\
+		"${target_file}"
+
+}; declare -fr make_new_tai_version
 
 make_non_transparent_version(){
 	local -r source_title="$1"; shift

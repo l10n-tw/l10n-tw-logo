@@ -21,7 +21,11 @@
 	make_non_transparent_version\
 		"${variant_title}"\
 		"${new_source_file}"
-	
+
+	make_new_tai_version\
+		"${variant_title}"\
+		"${new_source_file}"
+
 	unset\
 		variant_title\
 		new_source_file
