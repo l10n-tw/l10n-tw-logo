@@ -53,4 +53,4 @@ deploy:
     skip_cleanup: true
     local_dir: "GitHub Pages 網站"
     on:
-      branch: 主要開發分支
+      tags: true
