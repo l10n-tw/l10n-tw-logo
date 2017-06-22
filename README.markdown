@@ -11,7 +11,7 @@
 * 由數個 Inkscape 圖層組合而成，可以製作各種衍生版本
 
 ## 衍生版本<br>Derived Variants
-### 官方版本<br>Official Variants
+### 官方衍伸版本<br>Official Variants
 以下是曾經採用的官方版本
 
 #### 西洋獅版
@@ -30,7 +30,7 @@
 
 雖然的確看起來很像但實際上本配色設定與台灣民主進步黨無關，我們也不是台灣民主進步黨的外圍組織，特此聲明。
 
-### 非官方版本<br>Un-official Variants
+### 非官方衍伸版本<br>Un-official Variants
 *以下版本為興趣之作，不代表本社群立場*  
 *歡迎提交您所設計的版本*
 
