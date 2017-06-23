@@ -1,7 +1,7 @@
 # 臺灣在地化社群的標誌<br />L10n-TW's Logo
 [![最新修訂版本在 Travis CI 的建構狀態](https://travis-ci.org/l10n-tw/l10n-tw-logo.svg?branch=%E4%B8%BB%E8%A6%81%E9%96%8B%E7%99%BC%E5%88%86%E6%94%AF)](https://travis-ci.org/l10n-tw/l10n-tw-logo)  
 <https://github.com/l10n-tw/l10n-tw-logo>  
-[![目前的標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo.svg)  
+[![目前的標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo.svg)[![帶詮釋資料的目前的標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-with-metadata.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-with-metadata.svg)  
 臺灣在地化社群的識別標誌，在臺灣在地化社群之 GitHub 大頭貼、Telegram 頻道圖以及相關社群活動上使用
 
 ## 特色<br>Features
