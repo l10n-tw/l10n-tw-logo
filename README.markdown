@@ -14,7 +14,7 @@
 
 ## 衍生版本<br>Derived Variants
 ### 官方衍伸版本<br>Official Variants
-以下是曾經採用的官方版本
+以下是曾經採用的官方衍伸版本
 
 #### 西洋獅版
 [![西洋獅版標誌](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-western-lion.png)](http://l10n.tw/l10n-tw-logo/圖片/l10n-tw-logo-western-lion.svg)
