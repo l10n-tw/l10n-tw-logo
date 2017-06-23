@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="10cm" height="10cm" viewBox="0 0 100 99.999997" version="1.1" id="svg8">
+	<title id="title-global">臺灣在地化社群的標誌</title>
 	<defs id="defs2">
 		<inkscape:perspective id="perspective10" inkscape:persp3d-origin="400 : 225.33333 : 1" inkscape:vp_z="800 : 338 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 338 : 1" sodipodi:type="inkscape:persp3d"/>
 	</defs>
@@ -10,8 +11,45 @@
 			<cc:Work rdf:about="">
 				<dc:format>image/svg+xml</dc:format>
 				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-				<dc:title/>
+				<dc:title>臺灣在地化社群的標誌</dc:title>
 				<cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+				<dc:creator>
+					<cc:Agent>
+						<dc:title>Ｖ字龍 &lt;Vdragon.Taiwan@gmail.com&gt;等人</dc:title>
+					</cc:Agent>
+				</dc:creator>
+				<dc:rights>
+					<cc:Agent>
+						<dc:title>臺灣在地化社群 © 2017 保留部份權利</dc:title>
+					</cc:Agent>
+				</dc:rights>
+				<dc:source>https://github.com/l10n-tw/l10n-tw-logo</dc:source>
+				<dc:publisher>
+					<cc:Agent>
+						<dc:title>臺灣在地化社群 &lt;http://l10n.tw&gt;</dc:title>
+					</cc:Agent>
+				</dc:publisher>
+				<dc:contributor>
+					<cc:Agent>
+						<dc:title>參閱：Contributors to l10n-tw/l10n-tw-logo &lt;https://github.com/l10n-tw/l10n-tw-logo/graphs/contributors&gt;</dc:title>
+					</cc:Agent>
+				</dc:contributor>
+				<dc:subject>
+					<rdf:Bag>
+						<rdf:li>標誌設計</rdf:li>
+						<rdf:li>Logo Design</rdf:li>
+						<rdf:li>軟體在地化</rdf:li>
+						<rdf:li>在地化</rdf:li>
+						<rdf:li>Localization</rdf:li>
+						<rdf:li>L10N</rdf:li>
+						<rdf:li>社群</rdf:li>
+						<rdf:li>Community</rdf:li>
+					</rdf:Bag>
+				</dc:subject>
+				<dc:language>zh-TW</dc:language>
+				<dc:description>臺灣在地化社群的識別標誌，在臺灣在地化社群之 GitHub 大頭貼、Telegram 頻道圖以及相關社群活動上使用</dc:description>
+				<dc:relation>（同標題）</dc:relation>
+				<dc:identifier>https://github.com/l10n-tw/l10n-tw-logo/blob/HEAD/設計來源碼/l10n-tw-logo.svg</dc:identifier>
 			</cc:Work>
 			<cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
 				<cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
