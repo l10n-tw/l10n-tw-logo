@@ -46,6 +46,9 @@ deploy:
       - 建構中間產物/l10n-tw-logo*/l10n-tw-logo.svg
       - 建構中間產物/l10n-tw-logo*/l10n-tw-logo.png
       - 建構中間產物/l10n-tw-logo*/l10n-tw-logo-non-transparent.png
+      - 建構中間產物/l10n-tw-logo*/l10n-tw-logo-with-metadata.svg
+      - 建構中間產物/l10n-tw-logo*/l10n-tw-logo-with-metadata.png
+      - 建構中間產物/l10n-tw-logo*/l10n-tw-logo-with-metadata-non-transparent.svg
     on:
       tags: true
   - provider: pages
