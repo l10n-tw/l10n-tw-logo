@@ -68,27 +68,27 @@ init(){
 		--verbose\
 		--name-IDs='*'\
 		--text="${text_with_all_glyphs_we_need}"\
-		資源/字型/SourceHanSerifTW-SemiBold.otf
+		字型/SourceHanSerifTW-SemiBold.otf
 
 	pyftsubset\
 		--verbose\
 		--name-IDs='*'\
 		--text="${text_with_all_glyphs_we_need}"\
-		資源/字型/SourceHanSerifCN-SemiBold.otf
+		字型/SourceHanSerifCN-SemiBold.otf
 
 	ttx\
 		-f\
-		資源/字型/SourceHanSerifTW-SemiBold.subset.otf
+		字型/SourceHanSerifTW-SemiBold.subset.otf
 
 	ttx\
 		-f\
-		資源/字型/SourceHanSerifCN-SemiBold.subset.otf
+		字型/SourceHanSerifCN-SemiBold.subset.otf
 
 # Crashes ttx, probably wrong
 # 	sed\
 # 		--in-place\
 # 		's/Source Han Serif TW/思源宋體/'\
-# 		資源/字型/SourceHanSerifTW-SemiBold.subset.ttx
+# 		字型/SourceHanSerifTW-SemiBold.subset.ttx
 
 	xmlstarlet\
 		edit\
@@ -96,7 +96,7 @@ init(){
 			--inplace\
 			--update '/ttFont/name/namerecord[@nameID=16]'\
 			--value '思源宋體'\
-			資源/字型/SourceHanSerifTW-SemiBold.subset.ttx
+			字型/SourceHanSerifTW-SemiBold.subset.ttx
 
 # Crashes ttx, probably wrong
 # 	xmlstarlet\
@@ -105,17 +105,17 @@ init(){
 # 			--inplace\
 # 			--update '/ttFont/CFF/CFFFont/FullName/@value'\
 # 			--value '思源宋體'\
-# 			資源/字型/SourceHanSerifTW-SemiBold.subset.ttx
+# 			字型/SourceHanSerifTW-SemiBold.subset.ttx
 
 	export_subset_fonts\
-		"資源/字型/SourceHanSerifTW-SemiBold.subset.ttx"\
-		"資源/字型/SourceHanSerifCN-SemiBold.subset.ttx"
+		"字型/SourceHanSerifTW-SemiBold.subset.ttx"\
+		"字型/SourceHanSerifCN-SemiBold.subset.ttx"
 
 	# FIXME: Merge CN glyphs to TW
 # 	ttx\
 # 		-f\
-# 		-m 資源/字型/SourceHanSerifCN-SemiBold.subset.ttx\
-# 		資源/字型/SourceHanSerifTW-SemiBold.subset.otf
+# 		-m 字型/SourceHanSerifCN-SemiBold.subset.ttx\
+# 		字型/SourceHanSerifTW-SemiBold.subset.otf
 
 	exit 0
 }; declare -fr init
