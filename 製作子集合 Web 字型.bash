@@ -51,7 +51,7 @@ init(){
 		exit 1
 	fi
 
-	local DESIGN_FILE="${RUNTIME_EXECUTABLE_DIRECTORY}/來源碼/l10n-tw-logo.svg"
+	local DESIGN_FILE="${RUNTIME_EXECUTABLE_DIRECTORY}/設計來源碼/l10n-tw-logo.svg"
 	local text_with_all_glyphs_we_need
 	local source_font
 
