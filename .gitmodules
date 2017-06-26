@@ -7,3 +7,6 @@
 [submodule "開發工具/用於 Git 專案的 GNU Bash 腳本自動檢查程式"]
 	path = 開發工具/用於 Git 專案的 GNU Bash 腳本自動檢查程式
 	url = https://github.com/Lin-Buo-Ren/GNU-Bash-Automatic-Checking-Program-for-Git-Projects.git
+[submodule "開發工具/Utilities for Travis CI"]
+	path = 開發工具/Utilities for Travis CI
+	url = http://github.com/Lin-Buo-Ren/Utilities-for-Travis-CI.git
