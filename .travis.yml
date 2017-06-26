@@ -31,9 +31,10 @@ install:
 before_script:
   - ./"開發工具/GNU Bash Automatic Checking Program for Git Projects.bash"
 
-script:
   - ./下載並安裝需要用到的字型.bash
   - ./"Travis CI 支援/讓 Fontconfig 認為 Subset OTF 變種的思源黑體也是思源黑體.bash"
+
+script:
   - 軟體建構解決方案/批次命令/build.bash
   - ./"製作子集合 Web 字型.bash"
 
