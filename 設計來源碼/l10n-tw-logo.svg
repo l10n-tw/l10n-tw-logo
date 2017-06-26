@@ -207,14 +207,14 @@
 		</a>
 	</g>
 	<g inkscape:groupmode="layer" id="layer-site-domain" inkscape:label="網站域名" style="display:none">
-		<a style="display:inline" id="link-site-domain" xlink:href="http://l10n.tw">
-			<title id="title4283">官方網站域名</title>
+		<a style="display:inline" id="link-site-domain" xlink:href="http://l10n.tw" inkscape:label="官方網站域名">
+			<title id="title4283">點此進入臺灣在地化社群的官方網站</title>
 			<text id="text-site-domain" y="87.833702" x="30.517986" style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.58333302px;line-height:20000%;font-family:'思源宋體';-inkscape-font-specification:'思源宋體, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;image-rendering:auto" xml:space="preserve">l10n.tw</text>
 		</a>
 	</g>
 	<g inkscape:groupmode="layer" id="layer-site-domain-capitalized" inkscape:label="網站域名（大寫）" style="display:inline">
-		<a id="link-site-domain-capitalized" style="display:inline" xlink:href="http://l10n.tw">
-			<title id="title3578">官方網站域名（大寫）</title>
+		<a id="link-site-domain-capitalized" style="display:inline" xlink:href="http://l10n.tw" inkscape:label="官方網站域名（大寫）">
+			<title id="title3578">點此進入臺灣在地化社群的官方網站</title>
 			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.58333302px;line-height:20000%;font-family:'思源宋體';-inkscape-font-specification:'思源宋體, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;image-rendering:auto" x="25.848917" y="87.018784" id="text-site-domain-capitalized">L10N.TW</text>
 		</a>
 	</g>
