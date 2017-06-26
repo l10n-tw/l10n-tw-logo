@@ -9,9 +9,9 @@
 * GNU CoreUtils
 	* 用於軟體建構程序
 * GNU Bash
-	* 	用於軟體建構程序
+	* 用於軟體建構程序
 * 7-Zip
-	* 	用於軟體建構程序
+	* 用於軟體建構程序
 * XmlStarlet
 	* 用於軟體建構程序、SVG 語法檢查
 * GNU Findutils
