@@ -36,7 +36,7 @@ install:
   - PATH="${HOME}/.local/bin:${PATH}"
 
 before_script:
-  - ./"開發工具/GNU Bash Automatic Checking Program for Git Projects/GNU Bash Automatic Checking Program for Git Projects.bash"
+  - ./"開發工具/用於 Git 專案的 GNU Bash 腳本自動檢查程式/GNU Bash Automatic Checking Program for Git Projects.bash"
   - ./"Travis CI 支援/讓 Fontconfig 認為 Subset OTF 變種的思源黑體也是思源黑體.bash"
 
 script:
