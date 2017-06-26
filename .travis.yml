@@ -23,17 +23,20 @@ addons:
       - ghc # for ShellCheck
 
 install:
+  # For GNU Bash script checking
+  - ./"開發工具/Utilities for Travis CI/Build and Setup ShellCheck's Latest Release.bash" --without-root
+  - PATH=${HOME}/.cabal/bin:${PATH}
+
+  # For fonts used in design
+  - ./下載並安裝需要用到的字型.bash
+
+  # For subset font generation
   - pip install --user fonttools
   - pip install --user brotli
   - PATH="${HOME}/.local/bin:${PATH}"
 
-  - ./"開發工具/Utilities for Travis CI/Build and Setup ShellCheck's Latest Release.bash" --without-root
-  - PATH=${HOME}/.cabal/bin:${PATH}
-
 before_script:
   - ./"開發工具/GNU Bash Automatic Checking Program for Git Projects.bash"
-
-  - ./下載並安裝需要用到的字型.bash
   - ./"Travis CI 支援/讓 Fontconfig 認為 Subset OTF 變種的思源黑體也是思源黑體.bash"
 
 script:
