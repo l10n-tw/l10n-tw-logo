@@ -2,24 +2,36 @@
 ## 開發本軟體需要的軟體
 注意以下軟體的可執行檔目錄（如果有）皆需設定在 `PATH` 環境變數中
 
-* Inkscape
-	* 用於 logo 設計
-* 思源宋體 TW & CN
-	* 用於中文字字體
-* GNU CoreUtils
+* Inkscape(Debian+: inkscape)
+	* 進行標誌設計的主要軟體
+	* 建議使用上游最新釋出版本，舊版本 Inkscape [有一個複選元素就會程式崩潰的已知軟體缺陷](https://bugs.launchpad.net/inkscape/+bug/1428967)
+* 一個較先進的純文字文件編輯器
+    * 用來修改一些 Inkscape 較難處理的 SVG 標記
+    * 軟體至少要能正確識別無 Unicode BOM 的 UTF-8 字元編碼以及 Unix 風格的行結尾字元序列，原作者本身使用的是 KDE 的 Kate 編輯器(Debian+: kate)
+* 思源宋體 / Google Noto Serif
+	* 用於中英文字元的字體
+	* 至少需要有 SemiBold 字重
+	* 如果使用的字型的字型家族名非「思源宋體」必須被設定為視同相同字型，Linux 等使用 FontConfig 的作業系統可以參考[Travis CI 支援/讓 Fontconfig 認為 Subset OTF 變種的思源黑體也是思源黑體.fontconfig.conf](https://github.com/l10n-tw/l10n-tw-logo/blob/HEAD/Travis CI 支援/讓%20Fontconfig%20認為%20Subset%20OTF%20變種的思源黑體也是思源黑體.fontconfig.conf)
+* GNU CoreUtils(Debian+: coreutils)
 	* 用於軟體建構程序
-* GNU Bash
+	* 較舊版基於 Debian 的作業系統散佈版[還需要安裝 realpath 軟體包](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=730779)
+* GNU Bash(Debian+: bash)
 	* 用於軟體建構程序
-* 7-Zip
+* 7-Zip 的 `7zr` 命令(Debian+: p7zip)
 	* 用於軟體建構程序
-* XmlStarlet
+* XmlStarlet(Debian+: xmlstarlet)
 	* 用於軟體建構程序、SVG 語法檢查
-* GNU Findutils
+* GNU Findutils(Debian+: findutils)
 	* 用於提交前自動語法檢查
-* GNU sed
+* The GNU sed stream editor(Debian+: sed)
 	* 用於其他分支版本建構
-* Git
-	* 用於專案版本控制
+* Git(Debian+: git)
+	* 用於專案版本控制與釋出版本版本號的產生
+* ShellCheck(Debian+: shellcheck)
+    * 用於 GNU Bash 腳本程式潛在問題檢查
+    * 建議安裝最新釋出版本以避免僞陽性檢查結果
+
+如果您發現正確安裝了這些軟體後仍遇到問題可能是這個段落的缺陷，請建檔議題讓我們知道。
 
 ## 如何建構本軟體
 執行[軟體建構解決方案/批次命令/build.bash](../軟體建構解決方案/批次命令/build.bash) 即可，建構中間產物在[建構中間產物](../建構中間產物)子目錄中，建構結果會在[建構結果](../建構結果)子目錄中
