@@ -84,6 +84,15 @@ init(){
 		"除錯：修正過後的版本號：%s\n"\
 		"${version}" 1>&2
 
+	printf --\
+		"正在移除所有過去的建構產物……\n"
+	rm\
+		--recursive\
+		--force\
+		"${DIRECTORY_BUILD_ARTIFACTS}"/*.png\
+		"${DIRECTORY_BUILD_ARTIFACTS}"/*.svg\
+		"${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-"*
+
 	local temp_dir; temp_dir="$(\
 		mktemp\
 			--directory\
