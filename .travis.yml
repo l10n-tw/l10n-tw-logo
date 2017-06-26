@@ -19,6 +19,8 @@ addons:
       - inkscape
       - p7zip
       - xmlstarlet
+      - cabal-install # for ShellCheck
+      - ghc # for ShellCheck
 
 install:
   - pip install --user fonttools
