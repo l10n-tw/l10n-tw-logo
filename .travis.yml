@@ -49,7 +49,7 @@ before_cache:
 cache:
   pip: true
   directories:
-    - ${HOME}/.cabal
+    - $HOME/.cabal
 
 before_deploy:
   - cp 建構中間產物/l10n-tw-logo*/* "GitHub Pages 網站/圖片"
