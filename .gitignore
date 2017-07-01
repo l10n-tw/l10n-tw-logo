@@ -1,0 +1,8 @@
+# Version Tracking Ignore Rules for Git VCS
+# https://git-scm.com/docs/gitignore
+
+## Dont track debian build folder
+debian/l10n-tw-logo/
+
+## Do track Git settings
+!.git*
