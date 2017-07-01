@@ -138,14 +138,21 @@ init(){
 	fi
 
 	if [ "${enable_install}" == "Y" ]; then
-		mkdir --parents "${install_prefix}"
-		mkdir --parents\
-			"${install_prefix}/share/icons/hicolor/scalable/apps"\
-			"${install_prefix}/share/doc/${SOFTWARE_IDENTIFIER}"
-
-		cp "${DIRECTORY_BUILD_ARTIFACTS}/"*.svg "${install_prefix}"/share/icons/hicolor/scalable/apps
+		install\
+			--directory\
+			"${install_prefix}/share/icons/hicolor/scalable/apps"
+		install --verbose\
+			"${DIRECTORY_BUILD_ARTIFACTS}/"*.svg\
+			"${install_prefix}"/share/icons/hicolor/scalable/apps
+		# FIXME: Install PNG images to proper locations (e.g. in WIDTHxHEIGHT subdirectories)
 		#cp "${DIRECTORY_BUILD_ARTIFACTS}/"*.png "${install_prefix}/share/icons/hicolor/??x??"	
-		cp "${DIRECTORY_PROJECT_ROOT}/README.markdown" "${install_prefix}/share/doc/${SOFTWARE_IDENTIFIER}"
+		
+		install\
+			--directory\
+			"${install_prefix}/share/doc/${SOFTWARE_IDENTIFIER}"
+		install\
+			"${DIRECTORY_PROJECT_ROOT}/README.markdown"\
+			"${install_prefix}/share/doc/${SOFTWARE_IDENTIFIER}"
 	fi
 	
 	exit 0
