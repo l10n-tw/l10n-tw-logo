@@ -50,7 +50,8 @@ declare -r\
 
 declare\
 	without_archiving="N"\
-	enable_install="N"
+	enable_install="N"\
+	disable_build="N"
 
 declare\
 	install_prefix="/usr/local"
@@ -91,14 +92,16 @@ init(){
 		"除錯：修正過後的版本號：%s\n"\
 		"${version}" 1>&2
 
-	printf --\
-		"正在移除所有過去的建構產物……\n"
-	rm\
-		--recursive\
-		--force\
-		"${DIRECTORY_BUILD_ARTIFACTS}"/*.png\
-		"${DIRECTORY_BUILD_ARTIFACTS}"/*.svg\
-		"${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-"*
+	if [ "${disable_build}" == N ]; then
+		printf --\
+			"正在移除所有過去的建構產物……\n"
+		rm\
+			--recursive\
+			--force\
+			"${DIRECTORY_BUILD_ARTIFACTS}"/*.png\
+			"${DIRECTORY_BUILD_ARTIFACTS}"/*.svg\
+			"${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-"*
+	fi
 
 	local temp_dir; temp_dir="$(\
 		mktemp\
@@ -116,13 +119,15 @@ init(){
 		"${sanitized_design_source}"\
 		"${FILE_SOURCE_DESIGN}"
 
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.shisa.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.western-lion.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.taiwan-sovereign-region.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-mandarin-domain.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-dpp.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-new-power-party.source.bash"
-	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-china-communist.source.bash"
+	if [ "${disable_build}" == N ]; then
+		source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.shisa.source.bash"
+		source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.western-lion.source.bash"
+		source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.taiwan-sovereign-region.source.bash"
+		source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-mandarin-domain.source.bash"
+		source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-dpp.source.bash"
+		source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-new-power-party.source.bash"
+		source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-china-communist.source.bash"
+	fi
 
 	if [ "${without_archiving}" == N ]; then
 		local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-${version}"
@@ -359,6 +364,9 @@ process_commandline_parameters() {
 				"--debug"\
 				|"-d")
 					enable_debug="Y"
+					;;
+				--without-building)
+					disable_build="Y"
 					;;
 				--without-archiving)
 					without_archiving="Y"
