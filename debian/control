@@ -1,0 +1,26 @@
+Source: l10n-tw-logo
+Section: main/misc
+Priority: optional
+Maintainer: Ｖ字龍 <Vdragon.Taiwan@gmail.com>
+Build-Depends: 
+ debhelper (>=9), 
+ inkscape, 
+ realpath | coreutils (>= 8.23-1), 
+ pyzip, 
+ xml-starlet, 
+ dpkg | cabal-install, 
+ dpkg | ghc, 
+ dpkg | shellcheck, 
+ dpkg | fonttools (>=2.5), 
+ dpkg | python-brotli, 
+ dpkg | source-han-serif | noto-serif-cjk
+Standards-Version: 3.9.6
+Homepage: https://www.github.com/l10n-tw/l10n-tw-logo
+Vcs-Git: git://github.com/l10n-tw/l10n-tw-logo.git
+Vcs-Browser: https://github.com/l10n-tw/l10n-tw-logo
+
+Package: l10n-tw-logo
+Architecture: all
+Depends: ${misc:Depends}
+Description: 臺灣在地化社群的識別標誌
+ 臺灣在地化社群的識別標誌，在臺灣在地化社群之 GitHub 大頭貼、Telegram 頻道圖以及相關社群活動上使用
