@@ -48,6 +48,13 @@ declare -r\
 declare -r\
 	FILE_SOURCE_DESIGN="${DIRECTORY_PROJECT_SOURCE_CODE}/${SOFTWARE_IDENTIFIER}.svg"
 
+declare\
+	without_archiving="N"\
+	enable_install="N"
+
+declare\
+	install_prefix="/usr/local"
+
 ## init function: entrypoint of main program
 ## This function is called near the end of the file,
 ## with the script's command-line parameters as arguments
@@ -117,16 +124,29 @@ init(){
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-new-power-party.source.bash"
 	source "${RUNTIME_EXECUTABLE_DIRECTORY}/build.unofficial-china-communist.source.bash"
 
-	local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-${version}"
-	
-	rm --recursive --force "${archive_directory}"
-	mkdir --parents "${archive_directory}"
+	if [ "${without_archiving}" == N ]; then
+		local archive_directory="${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-${version}"
+		
+		rm --recursive --force "${archive_directory}"
+		mkdir --parents "${archive_directory}"
 
-	mv "${DIRECTORY_BUILD_ARTIFACTS}/"*.svg "${archive_directory}"
-	mv "${DIRECTORY_BUILD_ARTIFACTS}/"*.png "${archive_directory}"	
-	cp "${DIRECTORY_PROJECT_ROOT}/README.markdown" "${archive_directory}"
-	
-	7zr a "$DIRECTORY_BUILD_RESULTS/${SOFTWARE_IDENTIFIER}-${version}".7z "${archive_directory}"
+		cp "${DIRECTORY_BUILD_ARTIFACTS}/"*.svg "${archive_directory}"
+		cp "${DIRECTORY_BUILD_ARTIFACTS}/"*.png "${archive_directory}"	
+		cp "${DIRECTORY_PROJECT_ROOT}/README.markdown" "${archive_directory}"
+		
+		7zr a "$DIRECTORY_BUILD_RESULTS/${SOFTWARE_IDENTIFIER}-${version}".7z "${archive_directory}"
+	fi
+
+	if [ "${enable_install}" == "Y" ]; then
+		mkdir --parents "${install_prefix}"
+		mkdir --parents\
+			"${install_prefix}/share/icons/hicolor/scalable/apps"\
+			"${install_prefix}/share/doc/${SOFTWARE_IDENTIFIER}"
+
+		cp "${DIRECTORY_BUILD_ARTIFACTS}/"*.svg "${install_prefix}"/share/icons/hicolor/scalable/apps
+		#cp "${DIRECTORY_BUILD_ARTIFACTS}/"*.png "${install_prefix}/share/icons/hicolor/??x??"	
+		cp "${DIRECTORY_PROJECT_ROOT}/README.markdown" "${install_prefix}/share/doc/${SOFTWARE_IDENTIFIER}"
+	fi
 	
 	exit 0
 }; declare -fr init
@@ -332,6 +352,24 @@ process_commandline_parameters() {
 				"--debug"\
 				|"-d")
 					enable_debug="Y"
+					;;
+				--without-archiving)
+					without_archiving="Y"
+					;;
+				--install)
+					enable_install="Y"
+					;;
+				--install-prefix)
+					unset "parameters[0]"
+					if [ "${#parameters[@]}" -ne 0 ]; then
+						parameters=("${parameters[@]}")
+						install_prefix="${parameters[0]}"
+					else
+						printf --\
+							"%s: Error: --install-prefix requires one argument!\n"\
+							"${FUNCNAME[0]}"
+						return 1
+					fi
 					;;
 				*)
 					printf "ERROR: Unknown command-line argument \"%s\"\n" "${parameters[0]}" >&2
