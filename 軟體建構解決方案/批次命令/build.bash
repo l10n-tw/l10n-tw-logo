@@ -51,7 +51,8 @@ declare -r\
 declare\
 	without_archiving="N"\
 	enable_install="N"\
-	disable_build="N"
+	disable_build="N"\
+	just_clean="N"
 
 declare\
 	install_prefix="/usr/local"
@@ -101,6 +102,10 @@ init(){
 			"${DIRECTORY_BUILD_ARTIFACTS}"/*.png\
 			"${DIRECTORY_BUILD_ARTIFACTS}"/*.svg\
 			"${DIRECTORY_BUILD_ARTIFACTS}/${SOFTWARE_IDENTIFIER}-"*
+
+		if [ "${just_clean}" == Y ]; then
+			exit 0
+		fi
 	fi
 
 	local temp_dir; temp_dir="$(\
@@ -364,6 +369,9 @@ process_commandline_parameters() {
 				"--debug"\
 				|"-d")
 					enable_debug="Y"
+					;;
+				--clean)
+					just_clean="Y"
 					;;
 				--without-building)
 					disable_build="Y"
