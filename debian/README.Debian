@@ -1,0 +1,7 @@
+l10n-tw-logo for Debian
+用於 Debian 及其所衍伸的系統的臺灣在地化社群標誌
+----------------------
+This package is mainly for supporting using l10n-tw-logo as icons according to the XDG specification.
+此軟體包主要用於支援將臺灣在地化社群標誌用作符合 XDG 規範的圖示。
+
+ -- Ｖ字龍 <Vdragon.Taiwan@gmail.com>  Sat, 01 Jul 2017 10:57:23 +0800
