@@ -6,7 +6,7 @@ Build-Depends:
  debhelper (>=9), 
  inkscape, 
  realpath | coreutils (>= 8.23-1), 
- pkzip, 
+ p7zip, 
  xmlstarlet, 
  dpkg | cabal-install, 
  dpkg | ghc, 
