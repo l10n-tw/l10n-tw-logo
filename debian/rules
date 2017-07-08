@@ -22,6 +22,7 @@ export DH_OPTIONS=-v
 clean:
 	./軟體建構解決方案/批次命令/build.bash\
 		--clean
+	rm -rf debian/l10n-tw-logo
 
 build: build-arch
 
@@ -33,7 +34,6 @@ build-indep:
 		--install\
 		--install-prefix\
 		debian/l10n-tw-logo
-	rm -rf debian/l10n-tw-logo
 
 binary: 
 
