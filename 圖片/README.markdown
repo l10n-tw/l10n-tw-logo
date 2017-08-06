@@ -80,7 +80,7 @@ Creative Commons [Attribution-Share Alike 4.0 International](https://creativecom
 ### 授權條款
 [合理使用 - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/%E5%90%88%E7%90%86%E4%BD%BF%E7%94%A8)
 
-## Polygonal-Lion-Face
+## Polygonal Lion Face
 ![圖片預覽](Polygonal-Lion-Face.svg)
 
 ### 作者
