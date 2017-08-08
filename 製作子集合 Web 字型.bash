@@ -13,8 +13,7 @@ set -o pipefail
 for a_command in realpath basename dirname xmlstarlet pyftsubset ttx; do
 	if ! command -v "${a_command}" >/dev/null; then
 		printf --\
-			"%s: Error: This program requires %s in the executable search \$PATHs.\n"\
-			"${RUNTIME_EXECUTABLE_NAME}"\
+			"Error: This program requires %s in the executable search \$PATHs.\n"\
 			"${a_command}"\
 			1>&2
 		exit 1
